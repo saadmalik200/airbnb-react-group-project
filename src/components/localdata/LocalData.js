@@ -138,7 +138,7 @@ const data = [
       "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
     about:
-      "The 44 Sardine is the perfect time to reconnect with the wildlife, watch the water, and adventure on the water.Heads up! There's a lot of work going on on bike paths, sidewalks, and roads. To get to the Marina, take the detour around 500m and the last 50m of paved road. If the work is happening in the area, there may be noise: the work of the digester, the pavement, etc. ",
+      "The 44 Sardine is the perfect time to reconnect with the wildlife, watch the water, and adventure on the water.Heads up! There's a lot of work going on on bike paths, sidewalks, and roads. To get to the Marina, take the detour around 500m and the last 50m of paved road. If the work is happening in the area, there may be noise: the work of the digester, the pavement, etc",
   },
 
   {
