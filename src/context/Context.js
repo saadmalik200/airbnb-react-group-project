@@ -25,7 +25,7 @@ const ContextProvider = ({ children }) => {
         return { ...state, distance: [...state.distance, action.payload] };
 
       case "geoData":
-        // console.log("action", action.payload);
+        console.log("This is Geo Data", action.payload);
         return { ...state, geoData: action.payload };
 
       default:
