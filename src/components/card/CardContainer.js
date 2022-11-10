@@ -9,7 +9,7 @@ const CardContainer = () => {
     <div className="flex mt-10  justify-center gap-10 flex-wrap">
       {state?.localData?.map((item, i) => (
         <Link key={i} to={`/home/${item.id}`}>
-          <Card item={item} />
+          <Card item={item} i={i} />
         </Link>
       ))}
     </div>
