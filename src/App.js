@@ -8,7 +8,6 @@ import NameReviewHeader from "./components/singlehousedetails/top-name-review/Na
 function App() {
   return (
     <div className="App">
-      {/* <Fetch /> */}
       <Header />
       <LocalData />
       <NameReviewHeader />
