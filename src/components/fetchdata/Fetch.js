@@ -11,7 +11,10 @@ const Fetch = () => {
       );
 
       const data = await res.json();
-      console.log(data);
+      data.meals.forEach(
+        (item) => (item.price = Math.floor(Math.random() * 1000))
+      );
+      console.log(data.meals);
       dispatch({ type: "sendData", payload: data });
     };
 

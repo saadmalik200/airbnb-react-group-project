@@ -3,13 +3,17 @@ import { createContext, useReducer } from "react";
 export const Context = createContext();
 
 const ContextProvider = ({ children }) => {
-  const initialState = {};
+  const initialState = { localData: [], apiData: [] };
 
   const reducer = (state, action) => {
     switch (action.type) {
       case "sendData":
         console.log("action", action.payload);
-        return { state };
+        return { ...state, apiData: action.payload };
+
+      case "localData":
+        console.log("action", action.payload);
+        return { ...state, localData: action.payload };
 
       default:
         return;
