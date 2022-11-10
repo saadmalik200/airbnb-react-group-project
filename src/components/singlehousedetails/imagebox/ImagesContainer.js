@@ -23,10 +23,7 @@ const ImagesContainer = ({ filteredHome }) => {
           />
         ))}
 
-        {/* <img
-          className="w-full h-full"
-          src="https://cdn.pixabay.com/photo/2017/11/09/10/57/light-weight-aggregates-2933073__340.jpg"
-          alt="2"
+        {/*
         />
         <img
           className="w-full h-full"
