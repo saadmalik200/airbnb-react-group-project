@@ -3,6 +3,7 @@ import { Context } from "../../context/Context";
 
 const data = [
   {
+    id: 1,
     title: "Gosau Log House",
     name: "44 Sardine Slow Life Houseboat - Carsibor Island",
     rating: 4.25,
@@ -24,8 +25,6 @@ const data = [
       "https://a0.muscache.com/im/pictures/42943aae-a61d-44cf-ac74-032872b406ec.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/e57df990-3268-4c4e-8fbf-b430675d6696.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/a9add02a-76e5-4ec3-b25f-c6bfc00ca512.jpg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-31259411/original/6d65b71b-31e2-4751-8f68-feaddda1481a.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/45292c18-7615-40e9-9da3-e2a499d0045b.jpg?im_w=1200",
     ],
     latlong: ["53.86329846276284", "14.286039249140556"],
     description:
@@ -40,10 +39,11 @@ const data = [
     ],
   },
   {
+    id: 2,
     title: "Beautiful cottage on magical lake",
     name: "Private room in serviced apartment hosted by Sylvia",
     rating: 4.7,
-    reviews: 102,
+    num_reviews: 102,
     city: "Schladming, Steiermark",
     country: "Austria",
     price: 316,
@@ -61,8 +61,6 @@ const data = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/0b6775a6-a0bc-4d8f-9602-ace39701114e.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/e6a2f788-2967-4cb8-8f71-195425ab3194.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/cf30fcd4-c31b-4de3-b86f-f16caa264c7b.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/e0deaffb-b2fe-4f08-a1f6-87b536f2a9fe.jpeg?im_w=720",
-      "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/0db2b954-598f-4a2e-ad78-1161baf44bee.jpeg?im_w=1200",
     ],
     latlong: ["47.372987385108416", "13.724369913599194"],
     description:
@@ -77,6 +75,7 @@ const data = [
     ],
   },
   {
+    id: 3,
     title: "Maja's Hideaway",
     name: "Entire rental unit hosted by Julia",
     rating: 4.12,
