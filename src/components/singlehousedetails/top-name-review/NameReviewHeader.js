@@ -23,7 +23,7 @@ const NameReviewHeader = () => {
             </p>
           </div>
           <div className="flex gap-1">
-            <p>{state?.localData[5].num_reviews}</p>
+            <p>{state?.localData[5]?.num_reviews}</p>
             <p>reviews </p>
           </div>
         </div>
