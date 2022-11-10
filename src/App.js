@@ -7,11 +7,7 @@ import SingleHouseDetails from "./components/singlehousedetails/SingleHouseDetai
 function App() {
   return (
     <div className="App">
-      {/* <Fetch /> */}
       <Header />
-      <LocalData />
-      <CardConatiner />
-      <SingleHouseDetails />
     </div>
   );
 }
