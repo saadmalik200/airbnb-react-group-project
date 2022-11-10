@@ -12,11 +12,11 @@ const GeoData = ({ lat, lng }) => {
         position?.coords?.latitude,
         position?.coords?.longitude,
       ]);
-      console.log(currGeoCoordinates);
       dispatch({ type: "geoData", payload: currGeoCoordinates });
     });
   }, [lat, lng]);
 
+  console.log("This one", currGeoCoordinates);
   useEffect(() => {
     const calculateDistance = () => {
       let dis = getDistance(

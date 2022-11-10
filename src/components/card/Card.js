@@ -12,6 +12,8 @@ import { Context } from "../../context/Context";
 import { useContext } from "react";
 import GeoData from "./Geolocation";
 
+import { BsFillStarFill } from "react-icons/bs";
+
 export default function ContainerResponsive({ item, i }) {
   const { state, dispatch } = useContext(Context);
   //console.log("this file", state);
@@ -24,19 +26,20 @@ export default function ContainerResponsive({ item, i }) {
   // console.log(state);
 
   return (
-    <Box sx={{ minHeight: 350 }}>
+    <Box sx={{ height: 418.34 }}>
       <GeoData lat={item.latlong[0]} lng={item.latlong[1]} />
       <Card
-        variant="outlined"
+        // variant="outlined"
         sx={(theme) => ({
           padding: 0,
-          width: 320,
+          width: 335.22,
+          height: 418.34,
           gridColumn: "span 2",
           flexDirection: "row",
           flexWrap: "wrap",
           resize: "horizontal",
           overflow: "hidden",
-          gap: "clamp(0px, (100% - 360px + 32px) * 999, 16px)",
+          // gap: "clamp(0px, (100% - 360px + 32px) * 999, 16px)",
           transition: "transform 0.3s, border 0.3s",
           "&:hover": {
             borderColor: theme.vars.palette.primary.outlinedHoverBorder,
@@ -50,10 +53,10 @@ export default function ContainerResponsive({ item, i }) {
             padding: 0,
             display: "flex",
             flexDirection: "column",
-            width: 318,
+            width: 335.22,
           }}
         >
-          <IconButton
+          <div
             size="sm"
             variant="plain"
             color="neutral"
@@ -66,21 +69,39 @@ export default function ContainerResponsive({ item, i }) {
                 bottom: "-120%",
                 left: "-100%",
                 position: "relative",
-                zIndex: "5",
+
                 color: "maroon",
               }}
             />
-          </IconButton>
+          </div>
           <Carousel
+            interval={null}
             sx={{
-              marginBottom: "15px",
+              height: 318.44,
+            }}
+            indicatorContainerProps={{
+              style: {
+                marginTop: "-30px", // 5
+                textAlign: "center", // 4
+                zIndex: "99",
+              },
+            }}
+            indicatorIconButtonProps={{
+              style: {
+                padding: "2px", // 1
+                height: "1px",
+                marginRight: "10px",
+                width: "1px",
+                color: "white", // 3
+              },
             }}
           >
             {item?.images.map((image, i) => (
               <div
                 style={{
-                  height: "302px",
-                  width: "318px",
+                  height: "318.44px",
+                  width: "335.22px",
+                  zIndex: "-1",
                 }}
               >
                 <img
@@ -90,6 +111,7 @@ export default function ContainerResponsive({ item, i }) {
                     width: "100%",
                     height: "100%",
                     borderRadius: "15px",
+                    zIndex: "-5",
                   }}
                 />
               </div>
@@ -97,26 +119,24 @@ export default function ContainerResponsive({ item, i }) {
           </Carousel>
         </Box>
 
-        <Box sx={{ display: "flex", gap: 1.5, mt: "auto" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 0,
+            mt: "auto",
+            fontSize: "15px",
+            lineHeight: "19px",
+          }}
+        >
           <div>
-            <Typography
-              level="h2"
-              fontWeight="lg"
-              sx={{ fontSize: "md" }}
-              mb={0.5}
-            >
-              <Link
-                href="#container-responsive"
-                overlay
-                underline="none"
-                sx={{
-                  color: "text.primary",
-                  height: "50px",
-                  "&.Mui-focusVisible:after": { outlineOffset: "-4px" },
-                }}
-              >
-                {item.city} {item.country}
-              </Link>
+            <Typography style={{ display: "flex" }} level="h2" fontWeight="lg">
+              <p className="w-[28rem]">
+                {item.city.slice(0, 15)} {item.country}{" "}
+              </p>
+              <div className="flex gap-2 items-center">
+                <BsFillStarFill />
+                <p>{item.rating}</p>
+              </div>
             </Typography>
             <Typography sx={{ color: "gray" }} level="body2">
               {state.distance[i]} kilometer away
