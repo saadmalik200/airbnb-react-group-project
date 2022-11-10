@@ -10,19 +10,22 @@ import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded
 import Carousel from "react-material-ui-carousel";
 import { Context } from "../../context/Context";
 import { useContext } from "react";
+import GeoData from "./Geolocation";
 
-export default function ContainerResponsive({ item }) {
+export default function ContainerResponsive({ item, i }) {
   const { state, dispatch } = useContext(Context);
-  const images = [
-    "https://a0.muscache.com/im/pictures/4532d3d4-dd10-472c-bc9b-fda35645f074.jpg?im_w=1200",
-    "https://a0.muscache.com/im/pictures/42943aae-a61d-44cf-ac74-032872b406ec.jpg?im_w=720",
-    "https://a0.muscache.com/im/pictures/f080ece9-3d5d-4686-b1f3-fbd66ae8f181.jpg?im_w=720",
-  ];
+  //console.log("this file", state);
+  // const images = [
+  //   "https://a0.muscache.com/im/pictures/4532d3d4-dd10-472c-bc9b-fda35645f074.jpg?im_w=1200",
+  //   "https://a0.muscache.com/im/pictures/42943aae-a61d-44cf-ac74-032872b406ec.jpg?im_w=720",
+  //   "https://a0.muscache.com/im/pictures/f080ece9-3d5d-4686-b1f3-fbd66ae8f181.jpg?im_w=720",
+  // ];
 
   // console.log(state);
 
   return (
     <Box sx={{ minHeight: 350 }}>
+      <GeoData lat={item.latlong[0]} lng={item.latlong[1]} />
       <Card
         variant="outlined"
         sx={(theme) => ({
@@ -116,13 +119,13 @@ export default function ContainerResponsive({ item }) {
               </Link>
             </Typography>
             <Typography sx={{ color: "gray" }} level="body2">
-              193 kilometer away
+              {state.distance[i]} kilometer away
             </Typography>
             <Typography sx={{ color: "gray" }} level="body2">
-              Date
+              {item.date}
             </Typography>
             <Typography level="body2">
-              <strong>$ {item.price}</strong> night
+              <strong>€ {item.price}</strong> night
             </Typography>
           </div>
         </Box>
