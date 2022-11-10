@@ -15,7 +15,7 @@ const ImagesContainer = ({ filteredHome }) => {
             key={i}
             className={`w-full h-full ${
               filteredHome?.images[0]
-                ? "w-full h-full col-span-2 row-span-2 rounded shadow-sm  lg:col-start-1 lg:row-start-1"
+                ? "w-full h-full col-span-2 row-span-2 rounded shadow-sm  col-start-1 row-start-1"
                 : "w-full h-full "
             }`}
             src={item}
