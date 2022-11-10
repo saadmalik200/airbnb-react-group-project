@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* HomePageHeader styles*/
+
+.nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.fa-airbnb {
+  font-size: 3rem;
+}
+
+.home-page-header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fa-globe,
+.host-text,
+.bars-user {
+  cursor: pointer;
+}
+
+.fa-globe {
+  font-size: 1.4rem;
+}
+
+.host-text {
+  font-size: 1.4rem;
+}
+
+.host-text:hover {
+  padding: 0.5rem 1rem;
+  background-color: darkgrey;
+  border-radius: 50px;
+}
+
+.bars-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.fa-bars {
+  font-size: 1.2rem;
+}

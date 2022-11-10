@@ -1,10 +1,10 @@
 import "./App.css";
-import Fetch from "./components/fetchdata/Fetch";
+import Header from "./components/header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <Fetch />
+    <div>
+      <Header />
     </div>
   );
 }
