@@ -9,7 +9,15 @@ import HomePage from "./components/homepage/HomePage";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <LocalData />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/search" element={<Header />} />
+          <Route path="/home/:singlehome" element={<SingleHouseDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
