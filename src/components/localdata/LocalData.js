@@ -17,7 +17,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Nov25-30",
+    date: "Nov 25-30",
     type: "houseboat",
     images: [
       "https://a0.muscache.com/im/pictures/4532d3d4-dd10-472c-bc9b-fda35645f074.jpg?im_w=1200",
@@ -53,7 +53,7 @@ const data = [
     bedrooms: 2,
     beds: 4,
     bath: 1,
-    date: "Nov28-30",
+    date: "Nov 28-30",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/3ed0cf4d-6016-4485-be4d-6f1a8ab758ff.jpeg?im_w=1200",
@@ -89,7 +89,7 @@ const data = [
     bedrooms: 2,
     beds: 3,
     bath: 1,
-    date: "Nov17-23",
+    date: "Nov 17-23",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-597806156879860866/original/523e2c37-ef4b-44af-85ea-24398be19b2b.jpeg?im_w=1200",
@@ -111,6 +111,7 @@ const data = [
     ],
   },
   {
+    id: 4,
     title: "Under Cupra",
     name: "Entire home hosted by Jon",
     rating: 4.92,
@@ -124,7 +125,7 @@ const data = [
     bedrooms: 2,
     beds: 2,
     bath: 1,
-    date: "Dec5-30",
+    date: "Dec 5-30",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/ccb54791-b4cd-4a04-a489-892d5be13cff.jpg?im_w=1200",
@@ -147,6 +148,7 @@ const data = [
   },
 
   {
+    id: 5,
     title: "Holiday home ",
     name: "Entire home hosted by Marieke",
     rating: 4.26,
@@ -160,7 +162,7 @@ const data = [
     bedrooms: 4,
     beds: 6,
     bath: 2,
-    date: "Dec3-13",
+    date: "Dec 3-13",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/c9b67a1c-518c-43e4-b7d9-9438d42dcca3.jpg?im_w=1200",
@@ -183,6 +185,7 @@ const data = [
   },
 
   {
+    id: 6,
     title: "Tyrolean farmhouse with panoramic views",
     name: "Entire rental unit hosted by Sara",
     rating: 4.66,
@@ -196,7 +199,7 @@ const data = [
     bedrooms: 1,
     beds: 2,
     bath: 1,
-    date: "Nov22-27",
+    date: "Nov 22-27",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/e94d6428-8206-4dc6-b4a2-d299c2e22618.jpg?im_w=1200",
@@ -221,6 +224,7 @@ const data = [
   },
 
   {
+    id: 7,
     title: "Beautiful nature. Close to Lakes & Hiking trails",
     name: "Entire rental unit hosted by Justin",
     rating: 4.82,
@@ -234,7 +238,7 @@ const data = [
     bedrooms: 3,
     beds: 2,
     bath: 2,
-    date: "Dec1-18",
+    date: "Dec 1-18",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/8a695865-4b99-4d4c-908d-02030091bdae.jpg?im_w=1200",
@@ -257,6 +261,7 @@ const data = [
   },
 
   {
+    id: 8,
     title: "Sleep in the middle of your garden",
     name: "Entire cabin hosted by Martin",
     rating: 4.91,
@@ -270,7 +275,7 @@ const data = [
     bedrooms: 3,
     beds: 8,
     bath: 1,
-    date: "Dec7-22",
+    date: "Dec 7-22",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-14393977/original/c4ae9b1f-0945-4b6b-b769-6cab5cf87768.jpeg?im_w=1200",
@@ -293,6 +298,7 @@ const data = [
   },
 
   {
+    id: 9,
     title: "Beautiful bali house with fireplace",
     name: "Private room in cave hosted by Sam",
     rating: 4.61,
@@ -306,7 +312,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Nov28-30",
+    date: "Nov 28-30",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/3cf5662b-8eed-40f6-ab9b-9637b6631610.jpg?im_w=1200",
@@ -329,6 +335,7 @@ const data = [
   },
 
   {
+    id: 10,
     title: "Sofia chalet",
     name: "Entire rental unit hosted by Linnea",
     rating: 4.71,
@@ -365,6 +372,7 @@ const data = [
   },
 
   {
+    id: 11,
     title: "Unique holiday home by the water for the family",
     name: "Entire loft hosted by Thomas",
     rating: 5,
@@ -378,7 +386,7 @@ const data = [
     bedrooms: 2,
     beds: 4,
     bath: 1,
-    date: "Nov26-29",
+    date: "Nov 26-29",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-33248221/original/8dd2344f-5f1d-4a15-95d4-f9cd0cdd3f7c.jpeg?im_w=1200",
@@ -400,6 +408,7 @@ const data = [
     ],
   },
   {
+    id: 12,
     title: "Cozy holiday home with the most beautiful view",
     name: "Entire serviced apartment hosted by Eric",
     rating: 4.88,
@@ -413,7 +422,7 @@ const data = [
     bedrooms: 1,
     beds: 2,
     bath: 1,
-    date: "Nov15-18",
+    date: "Nov 15-18",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/97e21866-8b88-470c-9a77-5da6b3ae4b2e.jpg?im_w=1200",
@@ -436,6 +445,7 @@ const data = [
   },
 
   {
+    id: 13,
     title: "Beautiful house in southern Brno",
     name: "Entire place hosted by Nataliia",
     rating: 4.33,
@@ -449,7 +459,7 @@ const data = [
     bedrooms: 2,
     beds: 4,
     bath: 1,
-    date: "Nov22-29",
+    date: "Nov 22-29",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/5e33c103-ab36-4a26-b52e-69343c8caaa9.jpg?im_w=1200",
@@ -472,6 +482,7 @@ const data = [
   },
 
   {
+    id: 14,
     title: "Lovely accommodation in Gunnarp",
     name: "Entire cabin hosted by Peishan",
     rating: 4.66,
@@ -485,7 +496,7 @@ const data = [
     bedrooms: 2,
     beds: 2,
     bath: 1,
-    date: "Nov22-30",
+    date: "Nov 22-30",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/cd96b8b7-43c6-4030-8d70-22a78d419e4d.jpg?im_w=1200",
@@ -508,6 +519,7 @@ const data = [
   },
 
   {
+    id: 15,
     title: "Small and romantic blockhouse",
     name: "Houseboat hosted by Gabriela",
     rating: 4.4,
@@ -521,7 +533,7 @@ const data = [
     bedrooms: 1,
     beds: 2,
     bath: 1,
-    date: "Nob16-28",
+    date: "Nov 16-28",
     type: "houseboat",
     images: [
       "https://a0.muscache.com/im/pictures/6295a03a-a745-44db-ad84-b69160297b47.jpg?im_w=1200",
@@ -544,6 +556,7 @@ const data = [
   },
 
   {
+    id: 16,
     title: "Holiday cottage",
     name: "Entire chalet hosted by Simas",
     rating: 5,
@@ -557,7 +570,7 @@ const data = [
     bedrooms: 2,
     beds: 3,
     bath: 1,
-    date: "Nov29-Dec15",
+    date: "Nov 29-Dec 15",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/3fcc350c-ac5f-4464-b757-4f43ef33c89f.jpeg?im_w=1200",
@@ -580,6 +593,7 @@ const data = [
   },
 
   {
+    id: 17,
     title: "Quiet and Gin at a Distillery at Ranch on a Lake",
     name: "Entire guest suite hosted by Pawel",
     rating: 4.99,
@@ -593,7 +607,7 @@ const data = [
     bedrooms: 3,
     beds: 7,
     bath: 2,
-    date: "Nov30-Dec11",
+    date: "Nov 30-Dec 11",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/905e4f3b-caff-4317-bf7d-2460d649dd70.jpg?im_w=1200",
@@ -616,6 +630,7 @@ const data = [
   },
 
   {
+    id: 18,
     title: "Pie Lielupe Apartments",
     name: "Entire rental unit hosted by Dmitry",
     rating: 4.55,
@@ -629,7 +644,7 @@ const data = [
     bedrooms: 0,
     beds: 3,
     bath: 1,
-    date: "Nov16-26",
+    date: "Nov 16-26",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/75826604/19a9659a_original.jpg?im_w=1200",
@@ -652,6 +667,7 @@ const data = [
   },
 
   {
+    id: 19,
     title: " Row - Fun's Best Ocean View",
     name: "Entire cabin hosted by Leon And Carina",
     rating: 5,
@@ -665,7 +681,7 @@ const data = [
     bedrooms: 3,
     beds: 3,
     bath: 2,
-    date: "Dec5-14",
+    date: "Dec 5-14",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/5973d706-c258-4818-b4d0-178508ad0739.jpg?im_w=1200",
@@ -687,6 +703,7 @@ const data = [
     ],
   },
   {
+    id: 20,
     title: "MyBlueCoast",
     name: "Entire condo hosted by Stella",
     rating: 4.77,
@@ -700,7 +717,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Dec9-18",
+    date: "Dec 9-18",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/093ce60a-2ee0-4499-a77e-3d531110a132.jpg?im_w=1200",
@@ -722,6 +739,7 @@ const data = [
   },
 
   {
+    id: 21,
     title: "THE WAVE TWIN 1 INFINITY VILLA KATHISMA LEFKADA",
     name: "Entire villa hosted by Hristos",
     rating: 4,
@@ -735,7 +753,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Dec5-15",
+    date: "Dec 5-15",
     type: "lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/2c6144b5-102b-4482-84a3-70026426a789.jpg?im_w=1200",
@@ -757,6 +775,7 @@ const data = [
   },
 
   {
+    id: 22,
     title: "Perla bungalov",
     name: "Entire bungalow hosted by Mehmetcan",
     rating: 4.55,
@@ -770,7 +789,7 @@ const data = [
     bedrooms: 2,
     beds: 1,
     bath: 1,
-    date: "Dec22-31",
+    date: "Dec 22-31",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/cf7f3f57-8a00-4397-acea-c891760d4b2f.jpg?im_w=960",
@@ -791,6 +810,7 @@ const data = [
   },
 
   {
+    id: 23,
     title: "Geodesic Dome",
     name: "Dome hosted by Arsene",
     rating: 5,
@@ -804,7 +824,7 @@ const data = [
     bedrooms: 2,
     beds: 3,
     bath: 1,
-    date: "Dec1-11",
+    date: "Dec 1-11",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/e4827970-7f3b-4d10-abb2-1a4488cf79e6.jpg?im_w=960",
@@ -826,6 +846,7 @@ const data = [
   },
 
   {
+    id: 24,
     title: "Wassertheureralm for 6 persons",
     name: "Entire home hosted by Thomas",
     rating: 5,
@@ -839,7 +860,7 @@ const data = [
     bedrooms: 2,
     beds: 4,
     bath: 2,
-    date: "Dec7-14",
+    date: "Dec 7-14",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-18535853/original/672673ca-2fdd-4feb-9a31-043a4f6b262f.jpeg?im_w=960",
@@ -861,6 +882,7 @@ const data = [
   },
 
   {
+    id: 25,
     title: "Waterfront with extraordinary view",
     name: "Entire rental unit hosted by Nela",
     rating: 4.2,
@@ -874,7 +896,7 @@ const data = [
     bedrooms: 0,
     beds: 4,
     bath: 1,
-    date: "Dec11-21",
+    date: "Dec 11-21",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/52159509/5acc860d_original.jpg?im_w=960",
@@ -896,6 +918,7 @@ const data = [
   },
 
   {
+    id: 26,
     title: "All Ocean View Apartment - Nazare",
     name: "Entire rental unit hosted by João",
     rating: 5,
@@ -909,7 +932,7 @@ const data = [
     bedrooms: 2,
     beds: 5,
     bath: 1,
-    date: "Dec4-24",
+    date: "Dec 4-24",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/823f5d01-776c-44d7-97c4-0db6933326bb.jpg?im_w=960",
@@ -931,6 +954,7 @@ const data = [
   },
 
   {
+    id: 27,
     title: "BNBHolder PALACIO DE CRISTAL es MIA",
     name: "Entire rental unit hosted by Emilio",
     rating: 4.44,
@@ -944,7 +968,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Dec29-31",
+    date: "Dec 29-31",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/bac33416-c4dd-4da6-be0f-39fe4ea4ce13.jpg?im_w=960",
@@ -966,6 +990,7 @@ const data = [
   },
 
   {
+    id: 28,
     title: "Cave Granado Guadix Granada",
     name: "Cave hosted by Pepa Y Juan",
     rating: 4.9,
@@ -979,7 +1004,7 @@ const data = [
     bedrooms: 2,
     beds: 2,
     bath: 2,
-    date: "Dec10-20",
+    date: "Dec 10-20",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/108593327/77a7d32a_original.jpg?im_w=960",
@@ -1001,6 +1026,7 @@ const data = [
   },
 
   {
+    id: 29,
     title: "Amalfi Lady Laura House",
     name: "Entire rental unit hosted by Antonio",
     rating: 4.89,
@@ -1014,7 +1040,7 @@ const data = [
     bedrooms: 1,
     beds: 2,
     bath: 1,
-    date: "Dec18-31",
+    date: "Dec 18-31",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/70c5ef55-4f7c-4e9a-8705-6b483c329616.jpg?im_w=960",
@@ -1036,6 +1062,7 @@ const data = [
   },
 
   {
+    id: 30,
     title: "Seven Limits Wellness Guesthouse - Gerle",
     name: "Entire bungalow hosted by Ferenc",
     rating: 4.78,
@@ -1049,7 +1076,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Nov18-28",
+    date: "Nov 18-28",
     type: "aframe",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-744751138509112943/original/76585029-5a07-4f73-b588-238a63924653.jpeg?im_w=960",
@@ -1071,6 +1098,7 @@ const data = [
   },
 
   {
+    id: 31,
     title: "Nature House-Bondo Valley Nature Reserve",
     name: "Farm stay hosted by Mara",
     rating: 4.65,
@@ -1084,7 +1112,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Nov15-19",
+    date: "Nov 15-19",
     type: "amazingview",
     images: [
       "https://a0.muscache.com/im/pictures/e69b3403-3d09-4f3f-b997-1a21164d1ee7.jpg?im_w=960",
@@ -1106,6 +1134,7 @@ const data = [
   },
 
   {
+    id: 32,
     title: "Unique and Secluded AirShip with Breathtaking Highland Views",
     name: "Tiny home hosted by Amanda",
     rating: 4.88,
@@ -1119,7 +1148,7 @@ const data = [
     bedrooms: 1,
     beds: 1,
     bath: 1,
-    date: "Dec18-27",
+    date: "Dec 18-27",
     type: "cabin",
     images: [
       "https://a0.muscache.com/im/pictures/4fb18cad-f0cc-4c15-a82c-eb6a400137a6.jpg?im_w=720",
