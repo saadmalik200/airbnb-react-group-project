@@ -19,7 +19,7 @@ export default function ContainerResponsive({ item }) {
     "https://a0.muscache.com/im/pictures/f080ece9-3d5d-4686-b1f3-fbd66ae8f181.jpg?im_w=720",
   ];
 
-  console.log(state);
+  // console.log(state);
 
   return (
     <Box sx={{ minHeight: 350 }}>
