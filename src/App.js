@@ -6,10 +6,7 @@ import CardConatiner from "./components/card/CardConatiner";
 function App() {
   return (
     <div className="App">
-      {/* <Fetch /> */}
       <Header />
-      <LocalData />
-      <CardConatiner />
     </div>
   );
 }

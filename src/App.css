@@ -17,20 +17,33 @@ body {
 /* HomePageHeader styles*/
 
 .nav {
-  background-color: aqua;
+  background-color: #f1faee;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  align-items: center;
+  padding: 1.8rem 3rem;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
 .fa-airbnb {
   font-size: 3rem;
 }
 
+.logo-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 .home-page-header-right {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .fa-globe,
@@ -39,18 +52,32 @@ body {
   cursor: pointer;
 }
 
+.host-text {
+  font-size: 1.3rem;
+}
+
+.text-background {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.text-background:hover {
+  background-color: antiquewhite;
+}
+
 .fa-globe {
   font-size: 1.4rem;
 }
 
-.host-text {
-  font-size: 1.4rem;
+.globe-background {
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: all 0.4s;
 }
 
-.host-text:hover {
-  padding: 0.5rem 1rem;
-  background-color: darkgrey;
-  border-radius: 50px;
+.globe-background:hover {
+  background-color: antiquewhite;
 }
 
 .bars-user {
@@ -60,6 +87,11 @@ body {
   border: 1px solid;
   padding: 0.5rem 1rem;
   border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.bars-user:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .fa-bars {
