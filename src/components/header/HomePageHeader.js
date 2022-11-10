@@ -1,26 +1,38 @@
-import "../../App.css";
+import { useContext } from "react";
+import { Context } from "../../context/Context";
+import "./header-styles/HomePageHeader.css";
 import Search from "./HomePageSearch";
+import SearchExtension from "./SearchExtension";
+import SearchCatagory from "./SearchCatagory";
 
 const HomePageHeader = () => {
+  const { discover, setDiscover } = useContext(Context);
+
+  console.log(discover);
+
   return (
     <nav className="nav">
-      <div className="logo-box">
-        <i class="fa-brands fa-airbnb"></i>
-        <h3 className="logo-name">airbnb</h3>
-      </div>
-      <Search />
-      <div className="home-page-header-right">
-        <span className="text-background">
-          <h3 className="host-text">Become a host</h3>
-        </span>
-        <span className="globe-background">
-          <i class="fa-solid fa-globe"></i>
-        </span>
-        <div className="bars-user">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-user"></i>
+      <div className="nav-container">
+        <div onClick={() => setDiscover((prev) => true)} className="logo-box">
+          <i className="fa-brands fa-airbnb"></i>
+          <h3 className="logo-name">airbnb</h3>
+        </div>
+        {discover ? <Search /> : <SearchCatagory />}
+        <div className="home-page-header-right">
+          <span className="text-background">
+            <h3 className="host-text">Become a host</h3>
+          </span>
+          <span className="globe-background">
+            <i className="fa-solid fa-globe"></i>
+          </span>
+          <div className="bars-user">
+            <i className="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-user"></i>
+          </div>
         </div>
       </div>
+
+      {!discover ? <SearchExtension /> : ""}
     </nav>
   );
 };

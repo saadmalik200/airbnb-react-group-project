@@ -9,10 +9,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <LocalData />
-      <NameReviewHeader />
-      <CardConatiner />
-      <SingleHouseDetails />
     </div>
   );
 }
