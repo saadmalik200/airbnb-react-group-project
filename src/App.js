@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <LocalData />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />

@@ -1,14 +1,25 @@
+import { useContext } from "react";
+import { Context } from "../../context/Context";
+import "./header-styles/HomePageSearch.css";
+
 const Search = () => {
+  const { handleSearchClick } = useContext(Context);
+
   return (
     <div className="search-box">
-      <span>Anywhere</span>
+      <span onClick={handleSearchClick}>Anywhere</span>
       <span className="horizontal"></span>
-      <span>Any week</span>
+      <span onClick={handleSearchClick}>Any week</span>
       <span className="horizontal"></span>
 
-      <span className="add-guests">Add guests</span>
+      <span onClick={handleSearchClick} className="add-guests">
+        Add guests
+      </span>
       <span className="search-icon-box">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i
+          onClick={handleSearchClick}
+          className="fa-solid fa-magnifying-glass"
+        ></i>
       </span>
     </div>
   );
