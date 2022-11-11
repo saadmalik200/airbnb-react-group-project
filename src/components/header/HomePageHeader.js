@@ -8,16 +8,14 @@ import SearchCatagory from "./SearchCatagory";
 const HomePageHeader = () => {
   const { discover, setDiscover } = useContext(Context);
 
-  console.log(discover);
-
   return (
     <nav className="nav">
       <div className="nav-container">
-        <div onClick={() => setDiscover((prev) => true)} className="logo-box">
+        <div onClick={() => setDiscover((prev) => false)} className="logo-box">
           <i className="fa-brands fa-airbnb"></i>
           <h3 className="logo-name">airbnb</h3>
         </div>
-        {discover ? <Search /> : <SearchCatagory />}
+        {discover ? <SearchCatagory /> : <Search />}
         <div className="home-page-header-right">
           <span className="text-background">
             <h3 className="host-text">Become a host</h3>
@@ -32,7 +30,7 @@ const HomePageHeader = () => {
         </div>
       </div>
 
-      {!discover ? <SearchExtension /> : ""}
+      {discover ? <SearchExtension /> : ""}
     </nav>
   );
 };
