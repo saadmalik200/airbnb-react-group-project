@@ -13,11 +13,11 @@ const ContextProvider = ({ children }) => {
   const reducer = (state, action) => {
     switch (action.type) {
       case "sendData":
-        console.log("action", action.payload);
+        // console.log("action", action.payload);
         return { ...state, apiData: action.payload };
 
       case "localData":
-        console.log("action", action.payload);
+        //console.log("action", action.payload);
         return { ...state, localData: action.payload };
 
       case "distance":
@@ -25,7 +25,7 @@ const ContextProvider = ({ children }) => {
         return { ...state, distance: [...state.distance, action.payload] };
 
       case "geoData":
-        console.log("This is Geo Data", action.payload);
+        //console.log("This is Geo Data", action.payload);
         return { ...state, geoData: action.payload };
 
       default:
