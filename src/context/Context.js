@@ -19,7 +19,6 @@ const ContextProvider = ({ children }) => {
         return { ...state, apiData: action.payload };
 
       case "localData":
-        // console.log("action", action.payload);
         return { ...state, localData: action.payload };
 
       case "distance":
@@ -27,7 +26,6 @@ const ContextProvider = ({ children }) => {
         return { ...state, distance: [...state.distance, action.payload] };
 
       case "geoData":
-        // console.log("This is Geo Data", action.payload);
         return { ...state, geoData: action.payload };
       case "date":
         return {
