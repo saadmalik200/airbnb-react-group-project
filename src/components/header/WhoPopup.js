@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Context } from "../../context/Context";
 import "./header-styles/Popup.css";
 
@@ -10,7 +10,7 @@ const cataData = [
 ];
 
 const WhoPopup = () => {
-  const { amount, increment, decrement } = useContext(Context);
+  const { amount, increment, decrement, handleReset } = useContext(Context);
 
   return (
     <div className="who-pop-up-container">
@@ -50,6 +50,9 @@ const WhoPopup = () => {
           </div>
         );
       })}
+      <p onClick={handleReset} className="reset-btn">
+        Reset
+      </p>
     </div>
   );
 };

@@ -79,12 +79,13 @@ body {
 
 .request-icon-box {
   display: flex;
+  align-items: center;
   gap: 5rem;
 }
 
 .search-extension-icon-box {
   background-color: #fb8500;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   border-radius: 50%;
   display: grid;
   place-items: center;

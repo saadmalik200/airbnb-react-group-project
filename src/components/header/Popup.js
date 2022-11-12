@@ -14,9 +14,13 @@ const Popup = () => {
     <div className="pop-up">
       {popup.where ? <WherePopup /> : ""}
       {popup.who ? <WhoPopup /> : ""}
-      <DatePickerProvider>
-        <Calander />
-      </DatePickerProvider>
+      {popup.checkIn || popup.checkOut ? (
+        <DatePickerProvider>
+          <Calander />
+        </DatePickerProvider>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
