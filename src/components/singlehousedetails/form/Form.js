@@ -1,9 +1,12 @@
 import React from "react";
 import { BsDot } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { DatePickerProvider } from "@bcad1591/react-date-picker";
+import FormCalender from "./FormCalender";
 const Form = ({ filteredHome }) => {
   return (
-    <div className="border-2 border-slate-500 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px]">
+    <div className="border-2 border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px] rounded-2xl">
       <div>
         <div className="flex justify-between w-[322.333px] h-[27px] mb-[30px]">
           <h5 className="w-[120px] h-[26px] text-[24px] text-slate-800">
@@ -18,7 +21,10 @@ const Form = ({ filteredHome }) => {
                 {filteredHome?.rating}
               </p>
             </div>
-            <div className="flex flex-row justify-center items-center text-slate-500 font-medium text-[15px]">
+            <div
+              className="flex flex-row justify-center items-center text-slate-500 font-medium text-[15px]"
+              style={{ textDecoration: "underline" }}
+            >
               <BsDot />
               <p className="flex gap-1" style={{ textDecoration: "underline" }}>
                 {filteredHome?.num_reviews} reviews
@@ -27,16 +33,37 @@ const Form = ({ filteredHome }) => {
           </div>
         </div>
       </div>
-      <div className="w-[283.667] h-[108px] border-2 mb-[16px]">
-        <div className="flex">
-          {" "}
-          <div>CHECK-IN</div>
-          <div>CHECK-OUT</div>
-        </div>
 
-        <div className="w-[144px] h-[56px]">GUESTS</div>
+      <div className="w-[322.333px] h-[112px] border-2  border-slate-300 rounded-2xl">
+        <div className="flex h-[56px]">
+          <div className="w-[50%] border-r-2 p-4">
+            <p className="text-[10px] font-[700]">CHECK-IN</p>
+            <p className="text-[14px]">
+              {new Date().toISOString().split("T")[0]}
+            </p>
+          </div>
+          <div className="w-[50%] p-4">
+            <p className="text-[10px] font-[700]">CHECKOUT</p>
+            <p className="text-[14px]">
+              {new Date().toISOString().split("T")[0]}
+            </p>
+          </div>
+          <DatePickerProvider>
+            <FormCalender />
+          </DatePickerProvider>
+          ,
+        </div>
+        <div className="h-[56px] border-t-2 flex items-center justify-between px-4">
+          <div>
+            <p className="text-[10px] font-[700]">GUESTS</p>
+            <p className="text-[14px]">1 guest</p>
+          </div>
+          <div>
+            <RiArrowDropDownLine size={"35px"} />
+          </div>
+        </div>
       </div>
-      <div className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl">
+      <div className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl mt-5">
         <button>Reserve</button>
       </div>
       <div className="w-[283.667] h-[70px] mt-5 mb-10 text-center list-none">
@@ -45,22 +72,24 @@ const Form = ({ filteredHome }) => {
       </div>
       <div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
-          <div>${filteredHome?.price} x 5 nights</div>
-          <div>$300</div>
+          <div style={{ textDecoration: "underline" }}>
+            € {filteredHome?.price} x 5 nights
+          </div>
+          <div>€ 300</div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
-          <div>Cleaning fee</div>
-          <div>$50</div>
+          <div style={{ textDecoration: "underline" }}>Cleaning fee</div>
+          <div>€ 50</div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
-          <div>Service fee</div>
-          <div>$45</div>
+          <div style={{ textDecoration: "underline" }}>Service fee</div>
+          <div>€ 45</div>
         </div>
       </div>
       <hr />
       <div className="flex justify-between w-[283.667] h-[45px] mt-[16px] font-bold">
         <div>Total</div>
-        <div>$500</div>
+        <div>€ 500</div>
       </div>
     </div>
   );
