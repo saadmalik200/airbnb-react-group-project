@@ -3,7 +3,7 @@ import { BsDot } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 const Form = ({ filteredHome }) => {
   return (
-    <div className="border-2 border-slate-500 p-[24px] w-[372.74px] h-[540px]">
+    <div className="border-2 border-slate-500 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px]">
       <div>
         <div className="flex justify-between w-[322.333px] h-[27px] mb-[30px]">
           <h5 className="w-[120px] h-[26px] text-[24px] text-slate-800">
