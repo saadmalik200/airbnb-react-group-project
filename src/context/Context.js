@@ -8,6 +8,8 @@ const ContextProvider = ({ children }) => {
     apiData: [],
     distance: [],
     geoData: [],
+    firstDate: "",
+    secondDate: "",
   };
 
   const reducer = (state, action) => {
@@ -27,7 +29,12 @@ const ContextProvider = ({ children }) => {
       case "geoData":
         // console.log("This is Geo Data", action.payload);
         return { ...state, geoData: action.payload };
-
+      case "date":
+        return {
+          ...state,
+          firstDate: action.first,
+          secondDate: action.second,
+        };
       default:
         return;
     }
@@ -60,18 +67,57 @@ const ContextProvider = ({ children }) => {
     }
   };
 
+  const handleReset = () => {
+    setAmount({
+      0: 0,
+      1: 0,
+      2: 0,
+      3: 0,
+    });
+  };
+
   // State for the request pop up
   const [popup, setPopup] = useState({
     where: false,
     who: false,
+    checkIn: false,
+    checkOut: false,
   });
 
   const handleWhere = () => {
-    setPopup((prev) => ({ where: !popup.where, who: false }));
+    setPopup((prev) => ({
+      where: !popup.where,
+      who: false,
+      checkIn: false,
+      checkOut: false,
+    }));
   };
 
   const handleWho = () => {
-    setPopup((prev) => ({ where: false, who: !popup.who }));
+    setPopup((prev) => ({
+      where: false,
+      who: !popup.who,
+      checkIn: false,
+      checkOut: false,
+    }));
+  };
+
+  const handleCheckIn = () => {
+    setPopup((prev) => ({
+      where: false,
+      who: false,
+      checkIn: !popup.checkIn,
+      checkOut: false,
+    }));
+  };
+
+  const handleCheckOut = () => {
+    setPopup((prev) => ({
+      where: false,
+      who: false,
+      checkIn: false,
+      checkOut: !popup.checkOut,
+    }));
   };
 
   return (
@@ -88,6 +134,9 @@ const ContextProvider = ({ children }) => {
         popup,
         handleWhere,
         handleWho,
+        handleCheckIn,
+        handleCheckOut,
+        handleReset,
       }}
     >
       {children}

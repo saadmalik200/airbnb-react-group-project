@@ -13,7 +13,6 @@ const SingleHouseDetails = () => {
   const filteredHome = state.localData.filter(
     (item) => +item.id === +singlehome
   )[0];
-  console.log(filteredHome);
 
   return (
     <div>
