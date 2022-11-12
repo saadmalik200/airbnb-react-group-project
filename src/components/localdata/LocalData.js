@@ -1279,7 +1279,7 @@ const data = [
 ];
 
 const LocalData = () => {
-  const { state, dispatch } = useContext(Context);
+  const { dispatch } = useContext(Context);
   useEffect(() => {
     const getData = () => {
       return dispatch({ type: "localData", payload: data });
