@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <div>
       <HomePageHeader />
-      <Popup />
     </div>
   );
 };
