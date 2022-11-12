@@ -2,7 +2,7 @@ import React from "react";
 
 const ImagesContainer = ({ filteredHome }) => {
   return (
-    <div className="w-[1122px] pt-[24px] mx-auto">
+    <div className="w-[1120px] pt-[24px] mx-auto">
       <div className="container grid grid-cols-2 gap-4 grid-cols-4">
         <img
           style={{
@@ -11,7 +11,7 @@ const ImagesContainer = ({ filteredHome }) => {
           }}
           src={filteredHome?.images[0]}
           alt="1"
-          className="w-full h-full col-span-2 row-span-2 rounded shadow-sm  lg:col-start-1 lg:row-start-1"
+          className="w-full h-[497px] col-span-2 row-span-2 rounded shadow-sm  lg:col-start-1 lg:row-start-1"
         />
 
         <img className="w-full h-full" src={filteredHome?.images[1]} alt="2" />

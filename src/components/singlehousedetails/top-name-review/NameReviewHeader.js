@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../../context/Context";
+import React from "react";
 
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShare } from "react-icons/fi";
@@ -7,9 +6,6 @@ import { BsFillStarFill } from "react-icons/bs";
 import { GiMedal } from "react-icons/gi";
 import { BsDot } from "react-icons/bs";
 const NameReviewHeader = ({ filteredHome }) => {
-  const { state } = useContext(Context);
-  console.log(state.localData);
-
   return (
     <div className="w-[1120px] h-[86px] mx-auto  ">
       <h1
@@ -22,14 +18,17 @@ const NameReviewHeader = ({ filteredHome }) => {
         <div className="text-[14px] flex gap-2 items-center">
           <div className="flex gap-2 items-center">
             <BsFillStarFill />
-            <p className="flex items-center justify-center">
+            <p className="flex items-center justify-center font-[500]">
               {filteredHome?.rating}
             </p>
           </div>
           <div className="flex flex-row justify-center items-start">
             <BsDot />
           </div>
-          <div className="flex gap-1" style={{ textDecoration: "underline" }}>
+          <div
+            className="flex gap-1 font-[500]"
+            style={{ textDecoration: "underline" }}
+          >
             <p>{filteredHome?.num_reviews} reviews</p>
           </div>
           <div className="flex flex-row justify-center items-start">
@@ -37,14 +36,18 @@ const NameReviewHeader = ({ filteredHome }) => {
           </div>
           <div className="flex items-center gap-2">
             <GiMedal />
-            {filteredHome.superhost ? <p>Superhost</p> : ""}
+            {filteredHome?.superhost ? (
+              <p className="text-gray-700">Superhost</p>
+            ) : (
+              ""
+            )}
           </div>
           <div className="flex flex-row justify-center items-start">
             <BsDot />
           </div>
           <div style={{ textDecoration: "underline" }}>
-            <p className="">
-              {filteredHome.city}, {filteredHome.country}
+            <p className="font-[500]">
+              {filteredHome?.city}, {filteredHome?.country}
             </p>
           </div>
         </div>

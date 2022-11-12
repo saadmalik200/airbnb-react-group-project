@@ -8,8 +8,6 @@ import SearchCatagory from "./SearchCatagory";
 const HomePageHeader = () => {
   const { discover, setDiscover } = useContext(Context);
 
-  console.log(discover);
-
   return (
     <nav className="nav">
       <div className="nav-container">
