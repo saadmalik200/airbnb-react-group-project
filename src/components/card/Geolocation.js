@@ -16,7 +16,7 @@ const GeoData = ({ lat, lng }) => {
     });
   }, [lat, lng]);
 
-  console.log("This one", currGeoCoordinates);
+  // console.log("This one", currGeoCoordinates);
   useEffect(() => {
     const calculateDistance = () => {
       let dis = getDistance(
@@ -31,7 +31,7 @@ const GeoData = ({ lat, lng }) => {
       );
 
       dispatch({ type: "distance", payload: (dis / 1000).toFixed(0) });
-      console.log(`${dis / 1000} KM`);
+      // console.log(`${dis / 1000} KM`);
       // return `${dis / 1000} KM`;
       // console.log(currGeoCoordinates);
       // console.log(`${state?.localData[0]?.latlong[0]}`);

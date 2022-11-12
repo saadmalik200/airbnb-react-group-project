@@ -12,7 +12,10 @@ function App() {
       <BrowserRouter>
         <LocalData />
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/search" element={<Header />} />
+          <Route path="/home/:singlehome" element={<SingleHouseDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,22 @@
+/* Soft resets */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.calander-container {
+  background-color: aqua;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}

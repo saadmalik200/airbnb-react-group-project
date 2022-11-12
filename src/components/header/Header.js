@@ -1,11 +1,11 @@
 import HomePageHeader from "./HomePageHeader";
-import WherePopup from "./WherePopup";
+import Popup from "./Popup";
 
 const Header = () => {
   return (
     <div>
       <HomePageHeader />
-      <WherePopup />
+      <Popup />
     </div>
   );
 };
