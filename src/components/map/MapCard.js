@@ -3,15 +3,9 @@ import * as React from "react";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
-import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
-
-import { AiFillCloseCircle } from "react-icons/ai";
 
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { BsHeartFill } from "react-icons/bs";
 import Carousel from "react-material-ui-carousel";
-import { Context } from "../../context/Context";
-import { useContext } from "react";
 import GeoData from "../card/Geolocation";
 
 import { BsFillStarFill } from "react-icons/bs";
@@ -22,8 +16,6 @@ export default function ContainerResponsive({
   showCard,
   setShowCard,
 }) {
-  const { state, dispatch } = useContext(Context);
-
   return (
     <Box sx={{ height: 288, width: 324, resize: 0 }}>
       <GeoData lat={item.latlong[0]} lng={item.latlong[1]} />
@@ -85,6 +77,7 @@ export default function ContainerResponsive({
                 <img
                   key={i}
                   src={image}
+                  alt={i}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -113,7 +106,6 @@ export default function ContainerResponsive({
         >
           <div>
             <FavoriteBorderIcon
-              className="hover:fill-red-400"
               style={{
                 color: "white",
                 fill: "red",
@@ -146,18 +138,6 @@ export default function ContainerResponsive({
             >
               <p style={{ fontSize: "14px" }}>X</p>
             </div>
-            {/* <AiFillCloseCircle
-              onClick={() => setShowCard(!showCard)}
-              style={{
-                fill: "black",
-                position: "absolute",
-                left: "1.5rem",
-                top: "1.5rem",
-                fontSize: "2rem",
-                zIndex: "999",
-                cursor: "pointer",
-              }}
-            /> */}
 
             <Typography style={{ display: "flex" }} level="h2">
               <p className="w-[24.5rem]">

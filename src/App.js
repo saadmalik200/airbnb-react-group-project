@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/search" element={<Header />} />
-          <Route path="/map" element={<Map height={800} />} />
+          <Route path="/map" element={<Map height={830} />} />
           <Route path="/home/:singlehome" element={<SingleHouseDetails />} />
         </Routes>
       </BrowserRouter>

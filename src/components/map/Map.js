@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Map, Marker, Overlay, ZoomControl } from "pigeon-maps";
-import { useEffect, useState } from "react";
+import { Map, Overlay, ZoomControl } from "pigeon-maps";
+import { useState } from "react";
 import { Context } from "../../context/Context";
 import { maptiler } from "pigeon-maps/providers";
 import MapCard from "./MapCard";
@@ -11,9 +11,8 @@ import { useNavigate } from "react-router-dom";
 export default function MyMap({ height }) {
   const { state } = useContext(Context);
   const maptilerProvider = maptiler("f6khKvLbJmOPDaKF2XFD", "streets");
-  const [center, setCenter] = useState([47.41, 13.6997]);
-  const [marker, setMarker] = useState();
-  const [showmarker, setShowmarker] = useState(false);
+  const [center] = useState([47.41, 13.6997]);
+
   const [showCard, setShowCard] = useState(false);
   const [item, setItem] = useState();
 
@@ -45,19 +44,21 @@ export default function MyMap({ height }) {
             px-3  py-[1.5px] rounded-full text-[15px] font-bold
               text-gray-700            `}
             >
-              <p> {item.price} €</p>
+              <p>€ {item.price} </p>
             </div>
           </Overlay>
         ))}
-        <Overlay anchor={[+item?.latlong[0] - 1, +item?.latlong[1] - 5.5]}>
+        <Overlay anchor={[+item?.latlong[0], +item?.latlong[1]]}>
           {showCard && (
             <div className="relative">
               <p
                 style={{
-                  width: "fit-content",
+                  width: "5.5rem",
+                  padding: "0.5rem",
                   position: "absolute",
-                  top: "-3.5rem",
-                  left: "12.5rem",
+                  top: "0rem",
+                  left: "0rem",
+                  textAlign: "center",
                 }}
                 className={`${
                   showCard ? "bg-black" : "bg-white"
@@ -66,13 +67,22 @@ export default function MyMap({ height }) {
                 }`}
               >
                 {" "}
-                {item.price} €
+                € {item.price}
               </p>
-              <MapCard
-                showCard={showCard}
-                setShowCard={setShowCard}
-                item={item}
-              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "5rem",
+                  left: "-14rem",
+                  zIndex: "999",
+                }}
+              >
+                <MapCard
+                  showCard={showCard}
+                  setShowCard={setShowCard}
+                  item={item}
+                />
+              </div>
             </div>
           )}
         </Overlay>
@@ -80,7 +90,7 @@ export default function MyMap({ height }) {
         <ZoomControl />
         <button
           onClick={() => navigate("/")}
-          className="bg-black px-[19px]  py-[14px] w-[137.74px] z-40 rounded-full text-white h-[49.92px] absolute top-[calc(100vh-32.5vh)]  left-[46vw]"
+          className="bg-black px-[19px]  py-[14px] w-[137.74px]  rounded-full text-white h-[49.92px] absolute top-[calc(100vh-32.5vh)]  left-[46vw]"
         >
           <div className="flex items-center gap-3 h-[18.71px]">
             <p>Show list</p>
