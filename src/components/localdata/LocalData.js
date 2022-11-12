@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../../context/Context";
 
 const data = [
@@ -1279,7 +1279,7 @@ const data = [
 ];
 
 const LocalData = () => {
-  const { state, dispatch } = useContext(Context);
+  const { dispatch } = useContext(Context);
   console.log(data);
   useEffect(() => {
     const getData = () => {
@@ -1287,7 +1287,7 @@ const LocalData = () => {
     };
 
     getData();
-  }, [data]);
+  }, [dispatch]);
 };
 
 export default LocalData;
