@@ -7,8 +7,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      {/*<CardContainer /> */}
-      <MyMap />
+      <CardContainer />
     </div>
   );
 };
