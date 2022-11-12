@@ -3,7 +3,19 @@ import { Context } from "../../context/Context";
 import "./header-styles/SearchExtension.css";
 
 const SearchExtension = () => {
-  const { popup, handleWhere, handleWho } = useContext(Context);
+  const {
+    state,
+    popup,
+    handleWhere,
+    handleWho,
+    handleCheckIn,
+    handleCheckOut,
+    amount,
+  } = useContext(Context);
+
+  const { firstDate, secondDate } = state;
+
+  const totalAmount = amount[0] + amount[1] + amount[2] + amount[3];
 
   return (
     <div className="search-extension-container">
@@ -22,13 +34,24 @@ const SearchExtension = () => {
           placeholder="Search destinations"
         />
       </div>
-      <div className="request-box">
+      <div
+        onClick={handleCheckIn}
+        className={`request-box ${popup.checkIn ? "request-box-onclick" : ""} `}
+      >
         <p className="request">Check in</p>
-        <span className="request-info">Add dates</span>
+        <span className="request-info">
+          {" "}
+          {firstDate ? firstDate : "Add dates"}
+        </span>
       </div>
-      <div className="request-box">
+      <div
+        onClick={handleCheckOut}
+        className={`request-box ${popup.checkOut ? "request-box-onclick" : ""}`}
+      >
         <p className="request">Check out</p>
-        <span className="request-info">Add dates</span>
+        <span className="request-info">
+          {secondDate ? secondDate : "Add dates"}
+        </span>
       </div>
       <div
         onClick={handleWho}
@@ -38,8 +61,15 @@ const SearchExtension = () => {
       >
         <div className="who">
           <p className="request">Who</p>
-          <span className="request-info">Add guets</span>
+          {totalAmount === 0 ? (
+            <span className="request-info">Add guets</span>
+          ) : (
+            <p>
+              {totalAmount} {totalAmount > 1 ? " Guests" : "Guest"}
+            </p>
+          )}
         </div>
+
         <span className="search-extension-icon-box">
           <i className="fa-solid fa-magnifying-glass search-extension-icon"></i>
         </span>

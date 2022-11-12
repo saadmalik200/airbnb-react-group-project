@@ -74,7 +74,7 @@ body {
 
 .who-pop-up-container {
   background-color: #ffefef;
-  padding: 2.5rem 5rem 4rem 5rem;
+  padding: 2.5rem 5rem 6rem 5rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -150,4 +150,27 @@ body {
   height: 35rem;
   background-color: #9dede1;
   align-self: center;
+}
+
+.reset-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translateX(-50%);
+  background-color: #fffffc;
+  padding: 0.5rem 1rem;
+  border: 1px solid #9dede1;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.reset-btn:hover {
+  transform: translate(-50%, -2px);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.reset-btn:active {
+  transform: translate(-50%, 0px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 }

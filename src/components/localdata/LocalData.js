@@ -1279,7 +1279,6 @@ const data = [
 ];
 
 const LocalData = () => {
-
   const { state, dispatch } = useContext(Context);
   useEffect(() => {
     const getData = () => {

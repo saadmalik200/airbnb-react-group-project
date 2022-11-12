@@ -110,7 +110,7 @@ export default function ContainerResponsive({ item, i }) {
                 right: "1.5rem",
                 top: "1.5rem",
                 fontSize: "2rem",
-                zIndex: "999",
+                zIndex: "5",
               }}
             />
 
