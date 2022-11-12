@@ -3,10 +3,9 @@ import * as React from "react";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
-import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
 
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { BsHeartFill } from "react-icons/bs";
+
 import Carousel from "react-material-ui-carousel";
 import { Context } from "../../context/Context";
 import { useContext } from "react";
@@ -15,7 +14,7 @@ import GeoData from "./Geolocation";
 import { BsFillStarFill } from "react-icons/bs";
 
 export default function ContainerResponsive({ item, i }) {
-  const { state, dispatch } = useContext(Context);
+  const { state } = useContext(Context);
 
   return (
     <Box sx={{ height: 399.61, width: 315.39, resize: 0 }}>
@@ -77,6 +76,7 @@ export default function ContainerResponsive({ item, i }) {
               >
                 <img
                   key={i}
+                  alt={i}
                   src={image}
                   style={{
                     width: "100%",
@@ -110,7 +110,7 @@ export default function ContainerResponsive({ item, i }) {
                 right: "1.5rem",
                 top: "1.5rem",
                 fontSize: "2rem",
-                zIndex: "999",
+                zIndex: "5",
               }}
             />
 
