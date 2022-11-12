@@ -6,7 +6,6 @@ import ImageContainer from "./imagebox/ImagesContainer";
 import NameReviewHeader from "./top-name-review/NameReviewHeader";
 import RoomGuestInfo from "./roomguestinfo/RoomGuestInfo";
 import Form from "./form/Form";
-
 const SingleHouseDetails = () => {
   const { state } = useContext(Context);
 
@@ -21,8 +20,10 @@ const SingleHouseDetails = () => {
       <Header />
       <NameReviewHeader filteredHome={filteredHome} />
       <ImageContainer filteredHome={filteredHome} />
-      <RoomGuestInfo filteredHome={filteredHome} />
-      <Form filteredHome={filteredHome} />
+      <div className="flex justify-between w-[1120px] mx-auto relative">
+        <RoomGuestInfo filteredHome={filteredHome} />
+        <Form filteredHome={filteredHome} />
+      </div>
     </div>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
-import { AiOutlineHeart } from "react-icons/ai";
-import { FiShare } from "react-icons/fi";
+
 import { BsDot } from "react-icons/bs";
 import { FaMedal } from "react-icons/fa";
 
 const RoomGuestInfo = ({ filteredHome }) => {
   return (
-    <div className="w-[491.733px] h-[56px] flex justify-between">
+    <div className="w-[653.33px] h-[128px] pt-[48px] pb-[24px] flex justify-between">
       <div className="flex flex-col">
         <div>
           <h1
