@@ -3,28 +3,27 @@ import * as React from "react";
 import Box from "@mui/joy/Box";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
-import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
 
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { BsHeartFill } from "react-icons/bs";
 import Carousel from "react-material-ui-carousel";
-import { Context } from "../../context/Context";
-import { useContext } from "react";
-import GeoData from "./Geolocation";
+import GeoData from "../card/Geolocation";
 
 import { BsFillStarFill } from "react-icons/bs";
 
-export default function ContainerResponsive({ item, i }) {
-  const { state, dispatch } = useContext(Context);
-
+export default function ContainerResponsive({
+  item,
+  i,
+  showCard,
+  setShowCard,
+}) {
   return (
-    <Box sx={{ height: 399.61, width: 315.39, resize: 0 }}>
+    <Box sx={{ height: 288, width: 324, resize: 0 }}>
       <GeoData lat={item.latlong[0]} lng={item.latlong[1]} />
       <Card
         sx={(theme) => ({
           padding: 0,
-          width: 315.39,
-          height: 399.61,
+          width: 324,
+          height: 288,
           gridColumn: "span 2",
 
           overflow: "hidden",
@@ -41,13 +40,13 @@ export default function ContainerResponsive({ item, i }) {
             padding: 0,
             display: "flex",
             flexDirection: "column",
-            width: 315.39,
+            width: 324,
           }}
         >
           <Carousel
             interval={null}
             sx={{
-              height: 299.61,
+              height: 210,
               position: "relative",
             }}
             indicatorContainerProps={{
@@ -70,20 +69,21 @@ export default function ContainerResponsive({ item, i }) {
             {item?.images.map((image, i) => (
               <div
                 style={{
-                  height: "299.61px",
-                  width: "315.39px",
+                  height: "210px",
+                  width: "324px",
                   zIndex: "-1",
                 }}
               >
                 <img
                   key={i}
                   src={image}
+                  alt={i}
                   style={{
                     width: "100%",
                     height: "100%",
-                    borderRadius: "15px",
+                    borderTopRightRadius: "15px",
+                    borderTopLeftRadius: "15px",
                     zIndex: "-5",
-                    marginBottom: "12px",
                   }}
                 />
               </div>
@@ -95,14 +95,17 @@ export default function ContainerResponsive({ item, i }) {
           sx={{
             display: "flex",
             gap: 0,
-            mt: "12px",
+
             fontSize: "15px",
             lineHeight: "21px",
+            backgroundColor: "white",
+            borderBottomRightRadius: "15px",
+            borderBottomLeftRadius: "15px",
+            padding: "16px",
           }}
         >
           <div>
             <FavoriteBorderIcon
-              className="hover:fill-red-400"
               style={{
                 color: "white",
                 fill: "red",
@@ -114,8 +117,30 @@ export default function ContainerResponsive({ item, i }) {
               }}
             />
 
-            <Typography style={{ display: "flex" }} level="h2" fontWeight="lg">
-              <p className="w-[26rem]">
+            <div
+              onClick={() => setShowCard(!showCard)}
+              style={{
+                backgroundColor: "gray",
+                height: 24,
+                width: 24,
+                borderRadius: "50%",
+                position: "absolute",
+                left: "1.5rem",
+                top: "1.5rem",
+                fontSize: "2rem",
+                color: "white",
+                zIndex: "999",
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <p style={{ fontSize: "14px" }}>X</p>
+            </div>
+
+            <Typography style={{ display: "flex" }} level="h2">
+              <p className="w-[24.5rem]">
                 {item.city.slice(0, 15)} {item.country}{" "}
               </p>
               <div className="flex gap-2 items-center">
@@ -123,15 +148,16 @@ export default function ContainerResponsive({ item, i }) {
                 <p>{item.rating}</p>
               </div>
             </Typography>
-            <Typography sx={{ color: "gray" }} level="body2">
-              {state.distance[i]} kilometer away
-            </Typography>
-            <Typography sx={{ color: "gray" }} level="body2">
-              {item.date}
-            </Typography>
-            <Typography style={{ marginTop: 6 }} level="body2">
-              <strong>€ {item.price}</strong> night
-            </Typography>
+
+            <div className="flex items-center gap-2 ">
+              <Typography style={{}} level="body2">
+                € {item.price} night
+              </Typography>
+              <p>-</p>
+              <Typography sx={{ color: "gray" }} level="body2">
+                {item.date}
+              </Typography>
+            </div>
           </div>
         </Box>
       </Card>
