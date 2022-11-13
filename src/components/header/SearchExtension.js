@@ -18,18 +18,26 @@ const SearchExtension = () => {
   const totalAmount = amount[0] + amount[1] + amount[2] + amount[3];
 
   return (
-    <div className="search-extension-container">
+    <div
+      className={`search-extension-container ${
+        popup.where || popup.who || popup.checkIn || popup.checkOut
+          ? "search-extension-container-onclick"
+          : ""
+      } `}
+    >
       <div
         onClick={handleWhere}
         className={`request-box where ${
           popup.where ? "request-box-onclick" : ""
-        }`}
+        } ${popup.where ? "where-onclick" : ""} `}
       >
         <p className="request">Where</p>
         <input
-          className={`search-input ${
-            popup.where ? "search-input-onclick " : ""
-          } `}
+          className={`search-input  ${
+            popup.who || popup.checkIn || popup.checkOut
+              ? "search-input-on-any-click"
+              : ""
+          } ${popup.where ? "search-input-onclick" : ""} `}
           type="text"
           placeholder="Search destinations"
         />
