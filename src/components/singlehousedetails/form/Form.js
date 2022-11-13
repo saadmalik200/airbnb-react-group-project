@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { BsDot } from "react-icons/bs";
 import { BsFillStarFill } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { DatePickerProvider } from "@bcad1591/react-date-picker";
 import FormCalender from "./FormCalender";
+import { Context } from "../../../context/Context";
 const Form = ({ filteredHome }) => {
+  const { state, dispatch } = useContext(Context);
+
   return (
-    <div className="border-2 border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px] rounded-2xl">
+    <div className="border-2 relative border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px] rounded-2xl">
       <div>
         <div className="flex justify-between w-[322.333px] h-[27px] mb-[30px]">
           <h5 className="w-[120px] h-[26px] text-[24px] text-slate-800">
@@ -35,23 +38,22 @@ const Form = ({ filteredHome }) => {
       </div>
 
       <div className="w-[322.333px] h-[112px] border-2  border-slate-300 rounded-2xl">
-        <div className="flex h-[56px]">
+        <div
+          onClick={() => dispatch({ type: "formCalender" })}
+          className="flex h-[56px]"
+        >
           <div className="w-[50%] border-r-2 p-4">
             <p className="text-[10px] font-[700]">CHECK-IN</p>
             <p className="text-[14px]">
-              {new Date().toISOString().split("T")[0]}
+              {state.startDate ? state.startDate.slice(4, 11) : "Add dates"}
             </p>
           </div>
           <div className="w-[50%] p-4">
             <p className="text-[10px] font-[700]">CHECKOUT</p>
             <p className="text-[14px]">
-              {new Date().toISOString().split("T")[0]}
+              {state.endDate ? state.endDate.slice(4, 11) : "Add dates"}
             </p>
           </div>
-          <DatePickerProvider>
-            <FormCalender />
-          </DatePickerProvider>
-          ,
         </div>
         <div className="h-[56px] border-t-2 flex items-center justify-between px-4">
           <div>
@@ -73,24 +75,40 @@ const Form = ({ filteredHome }) => {
       <div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>
-            € {filteredHome?.price} x 5 nights
+            € {filteredHome?.price} x {state.calcDays} nights
           </div>
-          <div>€ 300</div>
+          <div>€ {filteredHome?.price * state.calcDays}</div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>Cleaning fee</div>
-          <div>€ 50</div>
+          <div>
+            € {(filteredHome?.price * state.calcDays * 0.08).toFixed(0)}
+          </div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>Service fee</div>
-          <div>€ 45</div>
+          <div>
+            € {(filteredHome?.price * state.calcDays * 0.05).toFixed(0)}
+          </div>
         </div>
       </div>
       <hr />
       <div className="flex justify-between w-[283.667] h-[45px] mt-[16px] font-bold">
         <div>Total</div>
-        <div>€ 500</div>
+        <div>
+          €{" "}
+          {+filteredHome?.price * state.calcDays +
+            +(filteredHome?.price * state.calcDays * 0.08).toFixed(0) +
+            +(filteredHome?.price * state.calcDays * 0.05).toFixed(0)}
+        </div>
       </div>
+      {state.formCalender && (
+        <div className="absolute top-0 right-1">
+          <DatePickerProvider>
+            <FormCalender />
+          </DatePickerProvider>
+        </div>
+      )}
     </div>
   );
 };

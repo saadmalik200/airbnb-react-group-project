@@ -10,6 +10,10 @@ const ContextProvider = ({ children }) => {
     geoData: [],
     firstDate: "",
     secondDate: "",
+    startDate: "",
+    endDate: "",
+    formCalender: false,
+    calcDays: 0,
   };
 
   const reducer = (state, action) => {
@@ -33,6 +37,16 @@ const ContextProvider = ({ children }) => {
           firstDate: action.first,
           secondDate: action.second,
         };
+      case "FORMDATE":
+        return {
+          ...state,
+          startDate: action.first,
+          endDate: action.second,
+          calcDays: action.calcDays,
+        };
+
+      case "formCalender":
+        return { ...state, formCalender: !state.formCalender };
       default:
         return;
     }
