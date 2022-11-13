@@ -68,6 +68,7 @@ export default function ContainerResponsive({
           >
             {item?.images.map((image, i) => (
               <div
+                key={i}
                 style={{
                   height: "210px",
                   width: "324px",

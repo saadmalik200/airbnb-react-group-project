@@ -1,9 +1,5 @@
 import "./header-styles/Calander.css";
-import {
-  DatePicker,
-  useDatePickReset,
-  useDatePickGetter,
-} from "@bcad1591/react-date-picker";
+import { DatePicker, useDatePickGetter } from "@bcad1591/react-date-picker";
 import { useContext, useEffect } from "react";
 import { Context } from "../../context/Context";
 
@@ -16,7 +12,7 @@ const Calander = () => {
 
   useEffect(() => {
     dispatch({ type: "date", first: firstDate, second: secondDate });
-  }, [firstDate, secondDate]);
+  }, [firstDate, secondDate, dispatch]);
 
   return (
     <div className="calander-container">

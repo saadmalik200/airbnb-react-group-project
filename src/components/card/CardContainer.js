@@ -13,6 +13,7 @@ const CardContainer = () => {
     <div className="flex mt-10  justify-center gap-10 flex-wrap relative">
       {state?.localData?.map((item, i) => (
         <div
+          key={i}
           style={{ cursor: "pointer" }}
           onClick={() => navigate(`/home/${item?.id}`)}
         >

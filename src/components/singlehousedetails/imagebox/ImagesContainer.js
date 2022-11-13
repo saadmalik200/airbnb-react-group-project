@@ -3,7 +3,7 @@ import React from "react";
 const ImagesContainer = ({ filteredHome }) => {
   return (
     <div className="w-[1120px] pt-[24px] mx-auto">
-      <div className="container grid grid-cols-2 gap-4 grid-cols-4">
+      <div className="container grid grid-cols-4 gap-4 ">
         <img
           style={{
             borderTopLeftRadius: "15px",

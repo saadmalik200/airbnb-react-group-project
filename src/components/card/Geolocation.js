@@ -1,9 +1,9 @@
 import { getDistance } from "geolib";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Context } from "../../context/Context";
 
 const GeoData = ({ lat, lng }) => {
-  const { state, dispatch } = useContext(Context);
+  const { dispatch } = useContext(Context);
   const [currGeoCoordinates, setcurrGeoCoordinates] = useState([]);
 
   useEffect(() => {
@@ -14,9 +14,8 @@ const GeoData = ({ lat, lng }) => {
       ]);
       dispatch({ type: "geoData", payload: currGeoCoordinates });
     });
-  }, [lat, lng]);
+  }, [currGeoCoordinates, lat, lng, dispatch]);
 
-  // console.log("This one", currGeoCoordinates);
   useEffect(() => {
     const calculateDistance = () => {
       let dis = getDistance(
@@ -40,7 +39,7 @@ const GeoData = ({ lat, lng }) => {
     };
 
     calculateDistance();
-  }, [currGeoCoordinates, lat, lng]);
+  }, [currGeoCoordinates, lat, lng, dispatch]);
 };
 
 export default GeoData;
