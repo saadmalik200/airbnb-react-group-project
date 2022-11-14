@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import "./header-styles/HomePageHeader.css";
 import Search from "./HomePageSearch";
@@ -6,7 +6,7 @@ import SearchExtension from "./SearchExtension";
 import SearchCatagory from "./SearchCatagory";
 
 const HomePageHeader = () => {
-  const { discover, setDiscover } = useContext(Context);
+  const { discover, setDiscover, handleLogin } = useContext(Context);
 
   return (
     <nav className="nav">
@@ -23,7 +23,7 @@ const HomePageHeader = () => {
           <span className="globe-background">
             <i className="fa-solid fa-globe"></i>
           </span>
-          <div className="bars-user">
+          <div onClick={handleLogin} className="bars-user">
             <i className="fa-solid fa-bars"></i>
             <i className="fa-solid fa-user"></i>
           </div>

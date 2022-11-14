@@ -8,8 +8,9 @@ import RoomGuestInfo from "./roomguestinfo/RoomGuestInfo";
 import Form from "./form/Form";
 import SelfCheckAirCover from "./selfcheckinair/SelfCheckAirCover";
 import WhereSleep from "./selfcheckinair/WhereSleep";
+import LoginForm from "../login/LoginForm";
 const SingleHouseDetails = () => {
-  const { state } = useContext(Context);
+  const { state, login } = useContext(Context);
 
   const { singlehome } = useParams();
 
@@ -30,6 +31,7 @@ const SingleHouseDetails = () => {
         </div>
         <Form filteredHome={filteredHome} />
       </div>
+      {login && <LoginForm />}
     </div>
   );
 };
