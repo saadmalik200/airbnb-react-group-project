@@ -19,7 +19,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Nov 25-30",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/4532d3d4-dd10-472c-bc9b-fda35645f074.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/f080ece9-3d5d-4686-b1f3-fbd66ae8f181.jpg?im_w=720",
@@ -56,7 +56,7 @@ const data = [
     beds: 4,
     bath: 1,
     date: "Nov 28-30",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/3ed0cf4d-6016-4485-be4d-6f1a8ab758ff.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-585198300657215100/original/17f6e5ac-007d-4664-8dcc-f9a254bcb73f.jpeg?im_w=720",
@@ -93,7 +93,7 @@ const data = [
     beds: 3,
     bath: 1,
     date: "Nov 17-23",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-36660750/original/9dbd5d1a-53dc-4419-8e3a-a9f07e129ce3.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-36660750/original/cfac0193-edb7-4916-99cd-cccc6e37a47d.jpeg?im_w=720",
@@ -130,7 +130,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Dec 5-30",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/ccb54791-b4cd-4a04-a489-892d5be13cff.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-24173392/original/b570ed5b-0560-4f9c-8ec8-9950c328c48a.jpeg?im_w=720",
@@ -168,7 +168,7 @@ const data = [
     beds: 6,
     bath: 2,
     date: "Dec 3-13",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/c9b67a1c-518c-43e4-b7d9-9438d42dcca3.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/5094cb9f-b7ce-45ca-abcc-aea927afe104.jpg?im_w=720",
@@ -184,7 +184,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -206,7 +206,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Nov 22-27",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/e94d6428-8206-4dc6-b4a2-d299c2e22618.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/3228f1eb-ab6d-409c-8c83-33202fd7183a.jpg?im_w=720",
@@ -224,7 +224,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -246,7 +246,7 @@ const data = [
     beds: 2,
     bath: 2,
     date: "Dec 1-18",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/8a695865-4b99-4d4c-908d-02030091bdae.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/d84dec18-b22a-4ab4-a62b-f9b1068666b8.jpg?im_w=720",
@@ -262,7 +262,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -270,7 +270,7 @@ const data = [
   {
     id: 8,
     title: "Sleep in the middle of your garden",
-    name: "Entire cabin hosted by Martin",
+    name: "Entire cabins hosted by Martin",
     rating: 4.91,
     num_reviews: 44,
     city: "Holbæk, Region Zealand ",
@@ -284,7 +284,7 @@ const data = [
     beds: 8,
     bath: 1,
     date: "Dec 7-22",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-14393977/original/c4ae9b1f-0945-4b6b-b769-6cab5cf87768.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-14393977/original/955e3761-9294-4e5b-ab36-2f4c0355240d.jpeg?im_w=720",
@@ -322,7 +322,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Nov 28-30",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/3cf5662b-8eed-40f6-ab9b-9637b6631610.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/58d5afee-54e6-4c69-83ed-a1bb2046960e.jpg?im_w=720",
@@ -338,7 +338,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -360,7 +360,7 @@ const data = [
     beds: 5,
     bath: 2,
     date: "Nov30-Dec30",
-    type: "lakefront",
+    type: "Lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/d45291aa-fdbb-4a86-a9af-34bee2e91ee2.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/74d97964-765a-4c14-9db2-6d8b29d128cf.jpg?im_w=720",
@@ -376,7 +376,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -398,7 +398,7 @@ const data = [
     beds: 4,
     bath: 1,
     date: "Nov 26-29",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-33248221/original/8dd2344f-5f1d-4a15-95d4-f9cd0cdd3f7c.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-33248221/original/bdb1d931-fd55-4e03-904b-3e4d97bb4163.jpeg?im_w=720",
@@ -414,7 +414,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -435,7 +435,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Nov 15-18",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/97e21866-8b88-470c-9a77-5da6b3ae4b2e.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/7689cdaa-19d3-4847-a81c-be6135c72171.jpg?im_w=720",
@@ -451,7 +451,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -473,7 +473,7 @@ const data = [
     beds: 4,
     bath: 1,
     date: "Nov 22-29",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/5e33c103-ab36-4a26-b52e-69343c8caaa9.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/f6c060d6-461f-4244-bae9-80997618d8d0.jpg?im_w=720",
@@ -489,7 +489,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -497,7 +497,7 @@ const data = [
   {
     id: 14,
     title: "Lovely accommodation in Gunnarp",
-    name: "Entire cabin hosted by Peishan",
+    name: "Entire cabins hosted by Peishan",
     rating: 4.66,
     num_reviews: 179,
     city: "Cuarny, Vaud",
@@ -511,7 +511,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Nov 22-30",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/cd96b8b7-43c6-4030-8d70-22a78d419e4d.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/412e5605-79a7-4d99-941e-697cbbc63917.jpg?im_w=720",
@@ -527,7 +527,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -549,7 +549,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Nov 16-28",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/6295a03a-a745-44db-ad84-b69160297b47.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/1603a55f-e30e-472c-8204-ba2e1530a272.jpg?im_w=720",
@@ -565,7 +565,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -587,7 +587,7 @@ const data = [
     beds: 3,
     bath: 1,
     date: "Nov 29-Dec 15",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/3fcc350c-ac5f-4464-b757-4f43ef33c89f.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/a65ad0ce-a614-4e30-827b-6d60b4a8954d.jpeg?im_w=720",
@@ -603,7 +603,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -625,7 +625,7 @@ const data = [
     beds: 7,
     bath: 2,
     date: "Nov 30-Dec 11",
-    type: "lakefront",
+    type: "Lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/905e4f3b-caff-4317-bf7d-2460d649dd70.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/4f240915-110d-41b5-bbda-30d23852f79e.jpg?im_w=720",
@@ -641,7 +641,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -663,7 +663,7 @@ const data = [
     beds: 3,
     bath: 1,
     date: "Nov 16-26",
-    type: "lakefront",
+    type: "Lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/75826604/19a9659a_original.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/75826818/801d4be7_original.jpg?im_w=720",
@@ -679,7 +679,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -687,7 +687,7 @@ const data = [
   {
     id: 19,
     title: " Row - Fun's Best Ocean View",
-    name: "Entire cabin hosted by Leon And Carina",
+    name: "Entire cabins hosted by Leon And Carina",
     rating: 4.98,
     num_reviews: 14,
     city: "Martofte",
@@ -701,7 +701,7 @@ const data = [
     beds: 3,
     bath: 2,
     date: "Dec 5-14",
-    type: "lakefront",
+    type: "Lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/5973d706-c258-4818-b4d0-178508ad0739.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/3efc205f-b78b-461a-8f14-61cbac4630c1.jpg?im_w=720",
@@ -717,7 +717,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
       "Fantastic place and lovely flat with all necessities. It has great access to seaside and forest. There are three beds available with 4 headspace in total. We really enjoyed our stay.",
     ],
   },
@@ -738,7 +738,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 9-18",
-    type: "lakefront",
+    type: "Lakefront",
     images: [
       "https://a0.muscache.com/im/pictures/093ce60a-2ee0-4499-a77e-3d531110a132.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/4c30c087-7449-46f2-99ea-57d2296bcca8.jpg?im_w=720",
@@ -754,7 +754,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -775,7 +775,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 5-15",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/2c6144b5-102b-4482-84a3-70026426a789.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/5f4e5992-5d2c-483b-9d98-e3f3e37b8633.jpg?im_w=720",
@@ -791,7 +791,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -812,7 +812,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 22-31",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/cf7f3f57-8a00-4397-acea-c891760d4b2f.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/a5da5cb7-cac8-488f-85b1-a0dd78b28a86.jpg?im_w=480",
@@ -827,7 +827,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -848,7 +848,7 @@ const data = [
     beds: 3,
     bath: 1,
     date: "Dec 1-11",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/e4827970-7f3b-4d10-abb2-1a4488cf79e6.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/miso/Hosting-48267503/original/56788e1d-b6bc-48e3-863d-913db2134c1c.jpeg?im_w=480",
@@ -858,13 +858,13 @@ const data = [
     ],
     latlong: ["45.52287128933816", "25.445257565631007"],
     description:
-      "Our Geodesic Dome was design to offer you not only accommodation, but a fully unique experience. Staying at our place will give you the feeling and peace of a wood cabin, the view of a mountain cabin, the intimacy of the woods, the commodity and space of a modern house with hot water, heat and electricity. Here, you will be on the grid but off the pavement.",
+      "Our Geodesic Dome was design to offer you not only accommodation, but a fully unique experience. Staying at our place will give you the feeling and peace of a wood cabins, the view of a mountain cabins, the intimacy of the woods, the commodity and space of a modern house with hot water, heat and electricity. Here, you will be on the grid but off the pavement.",
     reviews: [
       "Perfect place to chill and enjoy the nature.The house is super beautiful and also the place in general.I Simply love it and will definitely come back!",
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -885,7 +885,7 @@ const data = [
     beds: 4,
     bath: 2,
     date: "Dec 7-14",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-18535853/original/672673ca-2fdd-4feb-9a31-043a4f6b262f.jpeg?im_w=960",
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-18535853/original/eb13328b-b3ec-4664-ba7f-66d290c901d2.jpeg?im_w=480",
@@ -901,7 +901,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -922,7 +922,7 @@ const data = [
     beds: 4,
     bath: 1,
     date: "Dec 11-21",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/52159509/5acc860d_original.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/c0fb0725-d162-4673-ad34-c5c6c20504e9.jpg?im_w=480",
@@ -938,7 +938,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -959,7 +959,7 @@ const data = [
     beds: 5,
     bath: 1,
     date: "Dec 4-24",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/823f5d01-776c-44d7-97c4-0db6933326bb.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/987661ba-7c55-4f01-8079-07adbc14d7ef.jpg?im_w=720",
@@ -975,7 +975,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -996,7 +996,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 29-31",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/bac33416-c4dd-4da6-be0f-39fe4ea4ce13.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/ccb2d147-ef66-4c5e-b408-d246a6c3617b.jpg?im_w=480",
@@ -1012,7 +1012,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1033,7 +1033,7 @@ const data = [
     beds: 2,
     bath: 2,
     date: "Dec 10-20",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/108593327/77a7d32a_original.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/92d43f11-b58c-4306-8632-089d071b9799.jpg?im_w=720",
@@ -1049,7 +1049,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabinss is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1070,7 +1070,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Dec 18-31",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/70c5ef55-4f7c-4e9a-8705-6b483c329616.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/748454fc-2df1-41e3-a875-c1d33d367a01.jpg?im_w=480",
@@ -1086,7 +1086,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1107,7 +1107,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Nov 18-28",
-    type: "aframe",
+    type: "A-frames",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-744751138509112943/original/76585029-5a07-4f73-b588-238a63924653.jpeg?im_w=960",
       "https://a0.muscache.com/im/pictures/miso/Hosting-744751138509112943/original/244693b0-8d8d-4e62-a3b4-4ed7e4e16506.jpeg?im_w=480",
@@ -1123,7 +1123,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1144,7 +1144,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Nov 15-19",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/e69b3403-3d09-4f3f-b997-1a21164d1ee7.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/0abf4095-ef69-4afb-bef6-820e59d23990.jpg?im_w=480",
@@ -1160,7 +1160,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1181,7 +1181,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 18-27",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/4fb18cad-f0cc-4c15-a82c-eb6a400137a6.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fceeaee2-bbe7-4ba8-b0b8-06863e70017a.jpg?im_w=720",
@@ -1197,7 +1197,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1218,7 +1218,7 @@ const data = [
     beds: 4,
     bath: 3,
     date: "Dec 14-24",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-45967096/original/5eeb3266-1f26-44c1-84f1-82a2968cfdd5.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-45967096/original/9a4b3150-a36b-403b-912b-9b94226824d7.jpeg?im_w=720",
@@ -1234,7 +1234,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1255,7 +1255,7 @@ const data = [
     beds: 3,
     bath: 1,
     date: "Dec 19-31",
-    type: "cabin",
+    type: "cabins",
     images: [
       "https://a0.muscache.com/im/pictures/50188a08-84e2-46b5-b874-118a3f516b6a.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/3febea2a-309d-471f-aa36-0f1e05b63f7f.jpg?im_w=720",
@@ -1271,7 +1271,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 
@@ -1292,7 +1292,7 @@ const data = [
     beds: 2,
     bath: 2,
     date: "Dec5-15",
-    type: "amazingview",
+    type: "Amazing views",
     images: [
       "https://a0.muscache.com/im/pictures/monet/Luxury-54140085/original/6ff431ec-163b-438f-8eaa-cace0dbdb07a?im_w=1200",
       "https://a0.muscache.com/im/pictures/monet/Luxury-54140085/original/4f1fc575-bf06-4190-9d83-5a89acdf8e73?im_w=720",
@@ -1308,7 +1308,7 @@ const data = [
       "we are grateful for this magical stay on this houseboat with many wonderful moments...gladly again....",
       "We had a great time at Sebastians houseboat! I recommend to bring bikes.",
       "Very nice and relaxing location. Everything was perfect",
-      "Everything was exactly as expected, the Interieur of the cabin is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
+      "Everything was exactly as expected, the Interieur of the cabins is stunning, it was equipped with everything thats necessary. We can highly recommend this place. Perfect to relax and just wind down.",
     ],
   },
 ];

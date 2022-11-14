@@ -1,4 +1,5 @@
 import { createContext, useReducer, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Context = createContext();
 
@@ -15,6 +16,8 @@ const ContextProvider = ({ children }) => {
     endDate: "",
     formCalender: false,
     calcDays: 0,
+    filteredData: {},
+    activeIconName: "",
   };
 
   const reducer = (state, action) => {
@@ -49,6 +52,13 @@ const ContextProvider = ({ children }) => {
 
       case "formCalender":
         return { ...state, formCalender: !state.formCalender };
+
+      case "FILTERED-DATA":
+        return { ...state, filteredData: action.payload };
+      case "active-icon-name":
+        return { ...state, activeIconName: action.payload };
+      case "change-active-icon":
+        return { ...state, activeIconName: "" };
       default:
         return;
     }
@@ -134,6 +144,13 @@ const ContextProvider = ({ children }) => {
     }));
   };
 
+  //state for login
+  const [login, setLogin] = useState(false);
+
+  const handleLogin = () => {
+    setLogin((prev) => !prev);
+    // navigate("/home/login");
+  };
   return (
     <Context.Provider
       value={{
@@ -152,6 +169,9 @@ const ContextProvider = ({ children }) => {
         handleCheckIn,
         handleCheckOut,
         handleReset,
+        login,
+        setLogin,
+        handleLogin,
       }}
     >
       {children}

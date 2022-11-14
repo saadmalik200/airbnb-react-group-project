@@ -1,18 +1,22 @@
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 import { icons } from "../localdata/Icons";
 
 const HeaderIcons = () => {
-  const sliderLeft = () => {
-    const slider = document.querySelector(".icons-container");
-    slider.scrollLeft += 500;
-  };
+  const { dispatch } = useContext(Context);
 
-  const sliderRight = () => {
+  const sliderLeft = () => {
     const slider = document.querySelector(".icons-container");
     slider.scrollLeft -= 500;
   };
 
+  const sliderRight = () => {
+    const slider = document.querySelector(".icons-container");
+    slider.scrollLeft += 500;
+  };
+
   const handleIconClick = (iconName) => {
-    console.log(iconName);
+    dispatch({ type: "active-icon-name", payload: iconName });
   };
 
   return (

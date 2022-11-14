@@ -17,7 +17,7 @@ function FormCalender() {
 
   const startDate = pickedDates.firstPickedDate?.toString();
   const endDate = pickedDates.secondPickedDate?.toString();
-  const calcDays = moment(state.endDate).diff(state.startDate, "days");
+  const calcDays = moment(state?.endDate).diff(state?.startDate, "days");
 
   console.log(calcDays);
 
@@ -29,6 +29,8 @@ function FormCalender() {
       calcDays: calcDays,
     });
   }, [startDate, endDate, calcDays, dispatch]);
+
+  // console.log(startDate, endDate);
 
   return (
     <div className="relative">
