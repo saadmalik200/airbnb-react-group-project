@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { AiFillApple } from "react-icons/ai";
@@ -44,12 +44,17 @@ function CountrySelector() {
 }
 
 const LoginForm = () => {
+  const handleDelete = () => {};
+  const handleSignUp = () => {};
   return (
     <div>
       <div className="w-[568px] h-[682px] border-2 rounded-2xl">
         <div className="h-[54px] flex border-b-2 justify-between px-10 items-center">
-          <div className="">
-            <AiOutlineCloseCircle />
+          <div
+            onClick={handleDelete}
+            className=" flex justify-center items-center w-[36px] h-[36px] rounded-full hover:bg-gray-200"
+          >
+            <GrClose />
           </div>
           <div className="w-[160px] font-[600]">Log in or sign up</div>
           <div></div>
@@ -77,6 +82,7 @@ const LoginForm = () => {
                 "radial-gradient(circle, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%)",
             }}
             className="w-full h-[48px] mt-[16px] mb-[24px] rounded-2xl text-white flex justify-center items-center font-[500]"
+            onClick={handleSignUp}
           >
             Continue
           </div>

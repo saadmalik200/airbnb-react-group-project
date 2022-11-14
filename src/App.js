@@ -7,6 +7,7 @@ import SingleHouseDetails from "./components/singlehousedetails/SingleHouseDetai
 import HomePage from "./components/homepage/HomePage";
 import Map from "./components/map/Map";
 import LoginForm from "./components/login/LoginForm";
+import SignUpPage from "./components/signup/SignUp";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="/search" element={<Header />} />
           <Route path="/map" element={<Map height={830} />} />
           <Route path="/home/:singlehome" element={<SingleHouseDetails />} />
-          <Route path="/login" element={<LoginForm />} />
+          <Route path="/home/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </BrowserRouter>
     </div>
