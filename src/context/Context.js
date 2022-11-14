@@ -10,6 +10,7 @@ const ContextProvider = ({ children }) => {
     geoData: [],
     firstDate: "",
     secondDate: "",
+    dateDiff: 0,
     startDate: "",
     endDate: "",
     formCalender: false,
@@ -36,6 +37,7 @@ const ContextProvider = ({ children }) => {
           ...state,
           firstDate: action.first,
           secondDate: action.second,
+          dateDiff: action.dateDiff,
         };
       case "FORMDATE":
         return {
@@ -144,6 +146,7 @@ const ContextProvider = ({ children }) => {
         increment,
         decrement,
         popup,
+        setPopup,
         handleWhere,
         handleWho,
         handleCheckIn,

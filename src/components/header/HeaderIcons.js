@@ -11,12 +11,21 @@ const HeaderIcons = () => {
     slider.scrollLeft -= 500;
   };
 
+  const handleIconClick = (iconName) => {
+    console.log(iconName);
+  };
+
   return (
     <div className="icons-container">
       <i onClick={sliderLeft} class="fa-solid fa-chevron-left"></i>
       {icons.map((icon, i) => {
         return (
-          <div className="icon-box">
+          <div
+            onClick={() => {
+              return icon.id === i ? handleIconClick(icon.name) : "";
+            }}
+            className="icon-box"
+          >
             <img className="icon" src={icon.icon} alt="icons" />
             <p className="icon-title"> {icon.name} </p>
           </div>
