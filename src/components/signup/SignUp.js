@@ -8,9 +8,6 @@ const SignUpPage = () => {
 
   const { singlehome } = useParams();
 
-  const filteredHome = state.localData.filter(
-    (item) => +item.id === +singlehome
-  )[0];
   return (
     <div>
       <div className="flex  w-[1120px] mx-auto h-[116px] items-end text-[32px] font-[500] mb-[32px]">
@@ -49,7 +46,7 @@ const SignUpPage = () => {
           <div className="h-[76px] rounded-t-xl border-2 p-[16px] text-[16px]">
             <div className="flex justify-between">
               <div className="font-[500]">Pay in full</div>
-              <div> € 515.00 </div>
+              <div> € {state?.filteredData?.price} </div>
             </div>
             <div>Pay the total now and you're all set.</div>
           </div>
