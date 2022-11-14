@@ -13,7 +13,8 @@ const Form = ({ filteredHome }) => {
 
   const { state, dispatch, amount } = useContext(Context);
   const totalGuests = amount[0] + amount[1] + amount[2] + amount[3];
-  console.log(filteredHome);
+
+  //console.log(filteredHome);
   return (
     <div className="border-2  border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[15rem] mt-[5rem] rounded-2xl">
       <div>
@@ -75,7 +76,7 @@ const Form = ({ filteredHome }) => {
           </div>
         </div>
         {showGuest && !state?.formCalender && (
-          <div className="absolute top-[14.5rem] right-[-2rem]">
+          <div className="absolute top-[19.5rem] right-[-2rem]">
             {<WhoPopup />}
           </div>
         )}
@@ -87,6 +88,7 @@ const Form = ({ filteredHome }) => {
               type: "FILTERED-DATA",
               payload: filteredHome,
               calcDays: state.calcDays,
+              totalGuests: totalGuests,
             })
           }
           className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl mt-5"

@@ -91,14 +91,7 @@ const SelfCheckAirCover = ({ filteredHome }) => {
           </p>
         </div>
         <div className="pt-[32px] border-b-2 pb-[48px]">
-          <p>
-            Frische Waldluft, rauschende Wipfel und ein Panoramablick über das
-            Vogtland, der dich magisch nach draußen zieht. Willkommen im
-            BERGHEIM Tiny Holiday® Die Tiny House Container Lofts sind deine
-            Ruheoase – dein gemütliches Basislager – inmitten der Bike-, Wander-
-            und Skiwelt von Schöneck. Abgeschieden und dennoch mittendrin, wie
-            kaum ein zweites Domizil...{" "}
-          </p>
+          <p>{filteredHome?.description}</p>
           <div className="flex mt-[16px] items-center gap-[2px]">
             <p className="font-[600] " style={{ textDecoration: "underline" }}>
               Show more

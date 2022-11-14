@@ -6,17 +6,25 @@ import { useNavigate } from "react-router-dom";
 import { BsFillStarFill } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
 import { GiMedal } from "react-icons/gi";
+import Radio from "@mui/material/Radio";
 
 const SignUpPage = () => {
   const { state } = useContext(Context);
   const navigate = useNavigate("/home");
   console.log(state.filteredData, state.calcDays);
+
+  const [selectedValue, setSelectedValue] = React.useState("b");
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
   return (
     <div>
       <div className="flex  w-[1120px] mx-auto h-[116px] items-end text-[32px] font-[500] mb-[32px]">
         {" "}
         <BsFillArrowLeftCircleFill
-          onClick={() => navigate("/home")}
+          onClick={() => navigate(-1)}
           style={{ marginRight: "35px", marginBottom: "8px" }}
         />{" "}
         Confirm and pay{" "}
@@ -31,7 +39,12 @@ const SignUpPage = () => {
             <div>
               {" "}
               <div className="text-[1em] font-[500]">Dates</div>
-              <div className="mt-[5px]">Dec 26-31</div>
+              <div className="mt-[5px]">
+                {state?.startDate?.slice(4, 11) +
+                  "–" +
+                  " " +
+                  state?.endDate?.slice(4, 11)}
+              </div>
             </div>
             <div className="underline">Edit</div>
           </div>
@@ -39,7 +52,7 @@ const SignUpPage = () => {
             <div>
               {" "}
               <div className="text-[1em] font-[500]">Guests</div>
-              <div className="mt-[5px]">1 guests</div>
+              <div className="mt-[5px]">{state?.totalGuests} guests</div>
             </div>
             <div className="underline">Edit</div>
           </div>
@@ -50,20 +63,29 @@ const SignUpPage = () => {
           <div className="h-[76px] rounded-t-xl border-2 p-[16px] text-[16px]">
             <div className="flex justify-between">
               <div className="font-[500]">Pay in full</div>
-              <div>
-                {" "}
-                €{" "}
-                {+state?.filteredData?.price * state?.calcDays +
-                  +(
-                    state?.filteredData?.price *
-                    state?.calcDays *
-                    0.08
-                  ).toFixed(0) +
-                  +(
-                    state?.filteredData?.price *
-                    state?.calcDays *
-                    0.05
-                  ).toFixed(0)}
+              <div className="flex items-center">
+                <div>
+                  {" "}
+                  €{" "}
+                  {+state?.filteredData?.price * state?.calcDays +
+                    +(
+                      state?.filteredData?.price *
+                      state?.calcDays *
+                      0.08
+                    ).toFixed(0) +
+                    +(
+                      state?.filteredData?.price *
+                      state?.calcDays *
+                      0.05
+                    ).toFixed(0)}
+                </div>
+                <Radio
+                  checked={selectedValue === "b"}
+                  onChange={handleChange}
+                  value="b"
+                  name="radio-buttons"
+                  inputProps={{ "aria-label": "B" }}
+                />
               </div>
             </div>
             <div>Pay the total now and you're all set.</div>
@@ -72,21 +94,30 @@ const SignUpPage = () => {
           <div className="h-[154px]  rounded-b-xl border-2 border-t-0 p-[16px] text-[16px]">
             <div className="flex justify-between">
               <div className="font-[500]">Pay part now, part later</div>
-              <div>
-                {" "}
-                €{" "}
-                {(+state?.filteredData?.price * state?.calcDays +
-                  +(
-                    state?.filteredData?.price *
-                    state?.calcDays *
-                    0.08
-                  ).toFixed(0) +
-                  +(
-                    state?.filteredData?.price *
-                    state?.calcDays *
-                    0.05
-                  ).toFixed(0)) *
-                  0.25}
+              <div className="flex items-center">
+                <div>
+                  {" "}
+                  €{" "}
+                  {(+state?.filteredData?.price * state?.calcDays +
+                    +(
+                      state?.filteredData?.price *
+                      state?.calcDays *
+                      0.08
+                    ).toFixed(0) +
+                    +(
+                      state?.filteredData?.price *
+                      state?.calcDays *
+                      0.05
+                    ).toFixed(0)) *
+                    0.25}
+                </div>
+                <Radio
+                  checked={selectedValue === "a"}
+                  onChange={handleChange}
+                  value="a"
+                  name="radio-buttons"
+                  inputProps={{ "aria-label": "A" }}
+                />
               </div>
             </div>
             <div className="w-[494px]">
@@ -98,7 +129,7 @@ const SignUpPage = () => {
                 +(state?.filteredData?.price * state?.calcDays * 0.05).toFixed(
                   0
                 )) *
-                0.25}{" "}
+                0.6}{" "}
               now, and the rest (€{" "}
               {(+state?.filteredData?.price * state?.calcDays +
                 +(state?.filteredData?.price * state?.calcDays * 0.08).toFixed(
@@ -107,7 +138,7 @@ const SignUpPage = () => {
                 +(state?.filteredData?.price * state?.calcDays * 0.05).toFixed(
                   0
                 )) *
-                0.75}
+                0.4}
               ) will be automatically charged to the same payment method on Dec
               15, 2022. No extra fees.
             </div>
@@ -126,7 +157,7 @@ const SignUpPage = () => {
                   src={state?.filteredData?.images[2]}
                 />
               </div>
-              <div className="w-[210px] h-[106px] mb-[24px] flex  flex-col justify-between">
+              <div className="w-[310px] h-[106px] mb-[24px] flex  flex-col justify-between">
                 <div>
                   <div className="text-[12px] text-slate-500">
                     {state?.filteredData?.type}
@@ -135,18 +166,18 @@ const SignUpPage = () => {
                     {state?.filteredData?.city}
                   </div>
                 </div>
-                <div className="flex w-full h-[14px] gap-2 text-[12px]">
-                  <div className="flex gap-2 items-center">
+                <div className="flex w-full h-[14px] gap-2 text-[12px] items-center">
+                  <div className="flex gap-2 items-center justify-center">
                     <BsFillStarFill />
                     <p className="flex items-center justify-center font-[500]">
                       {state?.filteredData?.rating}
                     </p>
                   </div>
-                  <div className="flex flex-row justify-center items-start">
+                  <div className="flex flex-row justify-center items-center">
                     <BsDot />
                   </div>
                   <div
-                    className="flex w-[2rem] gap-1 font-[500]"
+                    className="flex w-[300px] gap-1 font-[500]"
                     style={{ textDecoration: "underline" }}
                   >
                     <p>{state?.filteredData?.num_reviews} reviews</p>
@@ -221,6 +252,47 @@ const SignUpPage = () => {
                     ).toFixed(0)}
                 </div>
               </div>
+
+              {selectedValue === "a" && (
+                <div className="border-2  mt-10 border-2 rounded-2xl p-5">
+                  <div className="flex font-[500] justify-between">
+                    <div className="">Current payment</div>
+                    <div>
+                      €{" "}
+                      {(+state?.filteredData?.price * state?.calcDays +
+                        +(
+                          state?.filteredData?.price *
+                          state?.calcDays *
+                          0.08
+                        ).toFixed(0) +
+                        +(
+                          state?.filteredData?.price *
+                          state?.calcDays *
+                          0.05
+                        ).toFixed(0)) *
+                        0.6}
+                    </div>
+                  </div>
+                  <div className="flex text-[14px] justify-between">
+                    <div>Due amount</div>
+                    <div>
+                      €{" "}
+                      {(+state?.filteredData?.price * state?.calcDays +
+                        +(
+                          state?.filteredData?.price *
+                          state?.calcDays *
+                          0.08
+                        ).toFixed(0) +
+                        +(
+                          state?.filteredData?.price *
+                          state?.calcDays *
+                          0.05
+                        ).toFixed(0)) *
+                        0.4}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
