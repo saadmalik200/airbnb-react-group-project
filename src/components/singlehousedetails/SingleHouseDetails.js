@@ -15,7 +15,7 @@ const SingleHouseDetails = () => {
 
   const { singlehome } = useParams();
 
-  const filteredHome = state.localData.filter(
+  const filteredHome = state?.localData?.filter(
     (item) => +item.id === +singlehome
   )[0];
 
