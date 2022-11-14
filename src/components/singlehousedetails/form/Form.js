@@ -5,8 +5,10 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { DatePickerProvider } from "@bcad1591/react-date-picker";
 import FormCalender from "./FormCalender";
 import { Context } from "../../../context/Context";
+import WhoPopup from "../../header/WhoPopup";
 const Form = ({ filteredHome }) => {
-  const { state, dispatch } = useContext(Context);
+  const { state, dispatch, amount } = useContext(Context);
+  const totalGuests = amount[0] + amount[1] + amount[2] + amount[3];
 
   return (
     <div className="border-2  border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[15rem] mt-[5rem] rounded-2xl">
@@ -56,10 +58,12 @@ const Form = ({ filteredHome }) => {
           </div>
         </div>
         <div className="h-[56px] border-t-2 flex items-center justify-between px-4">
-          <div>
+          <div className="relative">
             <p className="text-[10px] font-[700]">GUESTS</p>
-            <p className="text-[14px]">1 guest</p>
+            <p className="text-[14px]">{totalGuests} guest</p>
+            <div className="absolute top-10">{<WhoPopup />}</div>
           </div>
+
           <div>
             <RiArrowDropDownLine size={"35px"} />
           </div>

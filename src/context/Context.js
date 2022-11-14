@@ -1,4 +1,5 @@
 import { createContext, useReducer, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Context = createContext();
 
@@ -132,6 +133,13 @@ const ContextProvider = ({ children }) => {
     }));
   };
 
+  //state for login
+  const [login, setLogin] = useState(false);
+
+  const handleLogin = () => {
+    setLogin((prev) => !prev);
+    // navigate("/home/login");
+  };
   return (
     <Context.Provider
       value={{
@@ -149,6 +157,9 @@ const ContextProvider = ({ children }) => {
         handleCheckIn,
         handleCheckOut,
         handleReset,
+        login,
+        setLogin,
+        handleLogin,
       }}
     >
       {children}
