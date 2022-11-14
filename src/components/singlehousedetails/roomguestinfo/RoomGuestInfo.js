@@ -46,17 +46,13 @@ const RoomGuestInfo = ({ filteredHome }) => {
       <div className="width-[56px]">
         {filteredHome?.hostgender === "f" ? (
           <img
-            src={`https://randomuser.me/api/portraits/women/${Math.floor(
-              Math.random() * 100
-            )}.jpg`}
+            src={`https://randomuser.me/api/portraits/women/${filteredHome?.id}.jpg`}
             alt="host"
             style={{ width: "50px", height: "50px", borderRadius: "50%" }}
           />
         ) : (
           <img
-            src={`https://randomuser.me/api/portraits/men/${Math.floor(
-              Math.random() * 100
-            )}.jpg`}
+            src={`https://randomuser.me/api/portraits/men/${filteredHome?.id}.jpg`}
             alt="host"
             style={{ width: "50px", height: "50px", borderRadius: "50%" }}
           />
