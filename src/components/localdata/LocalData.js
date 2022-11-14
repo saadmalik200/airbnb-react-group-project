@@ -19,7 +19,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Nov 25-30",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/4532d3d4-dd10-472c-bc9b-fda35645f074.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/f080ece9-3d5d-4686-b1f3-fbd66ae8f181.jpg?im_w=720",
@@ -284,7 +284,7 @@ const data = [
     beds: 8,
     bath: 1,
     date: "Dec 7-22",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/miso/Hosting-14393977/original/c4ae9b1f-0945-4b6b-b769-6cab5cf87768.jpeg?im_w=1200",
       "https://a0.muscache.com/im/pictures/miso/Hosting-14393977/original/955e3761-9294-4e5b-ab36-2f4c0355240d.jpeg?im_w=720",
@@ -549,7 +549,7 @@ const data = [
     beds: 2,
     bath: 1,
     date: "Nov 16-28",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/6295a03a-a745-44db-ad84-b69160297b47.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/1603a55f-e30e-472c-8204-ba2e1530a272.jpg?im_w=720",
@@ -775,7 +775,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 5-15",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/2c6144b5-102b-4482-84a3-70026426a789.jpg?im_w=1200",
       "https://a0.muscache.com/im/pictures/5f4e5992-5d2c-483b-9d98-e3f3e37b8633.jpg?im_w=720",
@@ -885,7 +885,7 @@ const data = [
     beds: 4,
     bath: 2,
     date: "Dec 7-14",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-18535853/original/672673ca-2fdd-4feb-9a31-043a4f6b262f.jpeg?im_w=960",
       "https://a0.muscache.com/im/pictures/prohost-api/Hosting-18535853/original/eb13328b-b3ec-4664-ba7f-66d290c901d2.jpeg?im_w=480",
@@ -922,7 +922,7 @@ const data = [
     beds: 4,
     bath: 1,
     date: "Dec 11-21",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/52159509/5acc860d_original.jpg?im_w=960",
       "https://a0.muscache.com/im/pictures/c0fb0725-d162-4673-ad34-c5c6c20504e9.jpg?im_w=480",
@@ -1181,7 +1181,7 @@ const data = [
     beds: 1,
     bath: 1,
     date: "Dec 18-27",
-    type: "omg",
+    type: "OMG!",
     images: [
       "https://a0.muscache.com/im/pictures/4fb18cad-f0cc-4c15-a82c-eb6a400137a6.jpg?im_w=720",
       "https://a0.muscache.com/im/pictures/fceeaee2-bbe7-4ba8-b0b8-06863e70017a.jpg?im_w=720",
