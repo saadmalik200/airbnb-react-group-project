@@ -25,9 +25,3 @@ const Popup = () => {
   );
 };
 export default Popup;
-
-/**
- *   <DatePickerProvider>
-        <Calander />
-      </DatePickerProvider>
- */

@@ -8,6 +8,7 @@ export const icons = [
     icon: "https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg",
   },
   {
+    id: 2,
     name: "OMG!",
     icon: "https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg",
   },
@@ -32,6 +33,7 @@ export const icons = [
     icon: "https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg",
   },
   {
+    id: 8,
     name: "Amazing views",
     icon: "https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg",
   },
@@ -40,10 +42,12 @@ export const icons = [
     icon: "https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg",
   },
   {
-    name: "Cabins",
+    id: 10,
+    name: "cabins",
     icon: "https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg",
   },
   {
+    id: 11,
     name: "Lakefront",
     icon: "https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg",
   },
@@ -59,6 +63,12 @@ export const icons = [
     name: "Amazing pools",
     icon: "https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg",
   },
+  {
+    id: 15,
+    name: "A-frames",
+    icon: "https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg",
+  },
+
   {
     name: "Design",
     icon: "https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg",
