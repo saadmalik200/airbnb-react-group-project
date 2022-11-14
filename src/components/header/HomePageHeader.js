@@ -4,14 +4,23 @@ import "./header-styles/HomePageHeader.css";
 import Search from "./HomePageSearch";
 import SearchExtension from "./SearchExtension";
 import SearchCatagory from "./SearchCatagory";
+import { useNavigate } from "react-router-dom";
 
 const HomePageHeader = () => {
-  const { discover, setDiscover, handleLogin } = useContext(Context);
+  const { discover, setDiscover, handleLogin, dispatch } = useContext(Context);
+  const nav = useNavigate();
 
   return (
     <nav className="nav">
       <div className="nav-container">
-        <div onClick={() => setDiscover((prev) => false)} className="logo-box">
+        <div
+          onClick={() => {
+            setDiscover((prev) => false);
+            dispatch({ type: "change-active-icon" });
+            nav("/home");
+          }}
+          className="logo-box"
+        >
           <i className="fa-brands fa-airbnb"></i>
           <h3 className="logo-name">airbnb</h3>
         </div>

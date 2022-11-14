@@ -19,6 +19,8 @@ function FormCalender() {
   const endDate = pickedDates.secondPickedDate?.toString();
   const calcDays = moment(state?.endDate).diff(state?.startDate, "days");
 
+  console.log(calcDays);
+
   useEffect(() => {
     dispatch({
       type: "FORMDATE",

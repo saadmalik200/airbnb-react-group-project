@@ -10,16 +10,30 @@ const CardContainer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center gap-10 flex-wrap relative">
-      {state?.localData?.map((item, i) => (
-        <div
-          key={i}
-          style={{ cursor: "pointer" }}
-          onClick={() => navigate(`/home/${item?.id}`)}
-        >
-          <Card item={item} i={i} />
-        </div>
-      ))}
+    <div className="flex justify-center gap-10 mb-[10rem] flex-wrap relative">
+      {state.activeIconName
+        ? state.localData.map((item, i) => {
+            return item.type === state.activeIconName ? (
+              <div
+                key={i}
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate(`/home/${item?.id}`)}
+              >
+                <Card item={item} i={i} />
+              </div>
+            ) : (
+              ""
+            );
+          })
+        : state?.localData?.map((item, i) => (
+            <div
+              key={i}
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate(`/home/${item?.id}`)}
+            >
+              <Card item={item} i={i} />
+            </div>
+          ))}
 
       {!login && (
         <button

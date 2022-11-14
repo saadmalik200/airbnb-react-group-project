@@ -11,11 +11,13 @@ const ContextProvider = ({ children }) => {
     geoData: [],
     firstDate: "",
     secondDate: "",
+    dateDiff: 0,
     startDate: "",
     endDate: "",
     formCalender: false,
     calcDays: 0,
     filteredData: {},
+    activeIconName: "",
   };
 
   const reducer = (state, action) => {
@@ -38,6 +40,7 @@ const ContextProvider = ({ children }) => {
           ...state,
           firstDate: action.first,
           secondDate: action.second,
+          dateDiff: action.dateDiff,
         };
       case "FORMDATE":
         return {
@@ -52,7 +55,10 @@ const ContextProvider = ({ children }) => {
 
       case "FILTERED-DATA":
         return { ...state, filteredData: action.payload };
-
+      case "active-icon-name":
+        return { ...state, activeIconName: action.payload };
+      case "change-active-icon":
+        return { ...state, activeIconName: "" };
       default:
         return;
     }
@@ -157,6 +163,7 @@ const ContextProvider = ({ children }) => {
         increment,
         decrement,
         popup,
+        setPopup,
         handleWhere,
         handleWho,
         handleCheckIn,
