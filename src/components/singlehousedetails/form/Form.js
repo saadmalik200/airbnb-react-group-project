@@ -9,7 +9,7 @@ const Form = ({ filteredHome }) => {
   const { state, dispatch } = useContext(Context);
 
   return (
-    <div className="border-2 relative border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[48px] rounded-2xl">
+    <div className="border-2  border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[15rem] mt-[5rem] rounded-2xl">
       <div>
         <div className="flex justify-between w-[322.333px] h-[27px] mb-[30px]">
           <h5 className="w-[120px] h-[26px] text-[24px] text-slate-800">
