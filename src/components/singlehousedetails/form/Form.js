@@ -6,7 +6,11 @@ import { DatePickerProvider } from "@bcad1591/react-date-picker";
 import FormCalender from "./FormCalender";
 import { Context } from "../../../context/Context";
 import WhoPopup from "../../header/WhoPopup";
+import { Link } from "react-router-dom";
+
 const Form = ({ filteredHome }) => {
+  const [showGuest, setShowGuest] = useState(false);
+
   const { state, dispatch, amount } = useContext(Context);
   const totalGuests = amount[0] + amount[1] + amount[2] + amount[3];
 
@@ -47,31 +51,45 @@ const Form = ({ filteredHome }) => {
           <div className="w-[50%] border-r-2 p-4">
             <p className="text-[10px] font-[700]">CHECK-IN</p>
             <p className="text-[14px]">
-              {state.startDate ? state.startDate.slice(4, 11) : "Add dates"}
+              {state?.startDate ? state?.startDate?.slice(4, 11) : "Add dates"}
             </p>
           </div>
           <div className="w-[50%] p-4">
             <p className="text-[10px] font-[700]">CHECKOUT</p>
             <p className="text-[14px]">
-              {state.endDate ? state.endDate.slice(4, 11) : "Add dates"}
+              {state?.endDate ? state?.endDate.slice(4, 11) : "Add dates"}
             </p>
           </div>
         </div>
-        <div className="h-[56px] border-t-2 flex items-center justify-between px-4">
+        <div
+          onClick={() => setShowGuest((prev) => !prev)}
+          className="h-[56px] border-t-2 flex items-center justify-between px-4"
+        >
           <div className="relative">
             <p className="text-[10px] font-[700]">GUESTS</p>
             <p className="text-[14px]">{totalGuests} guest</p>
-            <div className="absolute top-10">{<WhoPopup />}</div>
           </div>
 
           <div>
             <RiArrowDropDownLine size={"35px"} />
           </div>
         </div>
+        {showGuest && !state?.formCalender && (
+          <div className="absolute top-[14.5rem] right-[-2rem]">
+            {<WhoPopup />}
+          </div>
+        )}
       </div>
-      <div className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl mt-5">
-        <button>Reserve</button>
-      </div>
+      <Link to="/signup">
+        <div
+          onClick={() =>
+            dispatch({ type: "FILTERED-DATA", payload: filteredHome })
+          }
+          className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl mt-5"
+        >
+          <button>Reserve</button>
+        </div>
+      </Link>
       <div className="w-[283.667] h-[70px] mt-5 mb-10 text-center list-none">
         <li> You won't be charged yet </li>
         <li> Price per night includes VAT and all applicable fees.</li>
@@ -79,20 +97,20 @@ const Form = ({ filteredHome }) => {
       <div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>
-            € {filteredHome?.price} x {state.calcDays} nights
+            € {filteredHome?.price} x {state?.calcDays} nights
           </div>
-          <div>€ {filteredHome?.price * state.calcDays}</div>
+          <div>€ {filteredHome?.price * state?.calcDays}</div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>Cleaning fee</div>
           <div>
-            € {(filteredHome?.price * state.calcDays * 0.08).toFixed(0)}
+            € {(filteredHome?.price * state?.calcDays * 0.08).toFixed(0)}
           </div>
         </div>
         <div className="flex justify-between w-[283.667] h-[20px] mb-[16px]">
           <div style={{ textDecoration: "underline" }}>Service fee</div>
           <div>
-            € {(filteredHome?.price * state.calcDays * 0.05).toFixed(0)}
+            € {(filteredHome?.price * state?.calcDays * 0.05).toFixed(0)}
           </div>
         </div>
       </div>
@@ -101,13 +119,13 @@ const Form = ({ filteredHome }) => {
         <div>Total</div>
         <div>
           €{" "}
-          {+filteredHome?.price * state.calcDays +
-            +(filteredHome?.price * state.calcDays * 0.08).toFixed(0) +
-            +(filteredHome?.price * state.calcDays * 0.05).toFixed(0)}
+          {+filteredHome?.price * state?.calcDays +
+            +(filteredHome?.price * state?.calcDays * 0.08).toFixed(0) +
+            +(filteredHome?.price * state?.calcDays * 0.05).toFixed(0)}
         </div>
       </div>
-      {state.formCalender && (
-        <div className="absolute top-0 right-1">
+      {state?.formCalender && !showGuest && (
+        <div className="border-2 rounded-[1rem] absolute top-[14rem] right-[-27rem]">
           <DatePickerProvider>
             <FormCalender />
           </DatePickerProvider>

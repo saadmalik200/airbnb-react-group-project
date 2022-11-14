@@ -9,12 +9,13 @@ import Form from "./form/Form";
 import SelfCheckAirCover from "./selfcheckinair/SelfCheckAirCover";
 import WhereSleep from "./selfcheckinair/WhereSleep";
 import LoginForm from "../login/LoginForm";
+import PlaceOffers from "./selfcheckinair/PlaceOffers";
 const SingleHouseDetails = () => {
   const { state, login } = useContext(Context);
 
   const { singlehome } = useParams();
 
-  const filteredHome = state.localData.filter(
+  const filteredHome = state?.localData?.filter(
     (item) => +item.id === +singlehome
   )[0];
 
@@ -28,6 +29,7 @@ const SingleHouseDetails = () => {
           <RoomGuestInfo filteredHome={filteredHome} />
           <SelfCheckAirCover filteredHome={filteredHome} />
           <WhereSleep />
+          <PlaceOffers />
         </div>
         <Form filteredHome={filteredHome} />
       </div>

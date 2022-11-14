@@ -15,6 +15,7 @@ const ContextProvider = ({ children }) => {
     endDate: "",
     formCalender: false,
     calcDays: 0,
+    filteredData: {},
   };
 
   const reducer = (state, action) => {
@@ -48,6 +49,10 @@ const ContextProvider = ({ children }) => {
 
       case "formCalender":
         return { ...state, formCalender: !state.formCalender };
+
+      case "FILTERED-DATA":
+        return { ...state, filteredData: action.payload };
+
       default:
         return;
     }
