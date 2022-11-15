@@ -31,7 +31,7 @@ const Calander = () => {
   }, [secondDate]);
 
   return (
-    <div className="relative">
+    <div className="calander-container">
       <div>
         <div
           style={{ zIndex: 999 }}
