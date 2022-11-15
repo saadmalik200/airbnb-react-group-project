@@ -14,10 +14,11 @@ const Form = ({ filteredHome }) => {
   const { state, dispatch, amount } = useContext(Context);
   const totalGuests = amount[0] + amount[1] + amount[2] + amount[3];
 
+  //console.log(filteredHome);
   return (
-    <div className="border-2  border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[15rem] mt-[5rem] rounded-2xl">
+    <div className="border-2 bg-white  border-slate-300 p-[24px] w-[372.74px] h-[540px] sticky right-0 top-[15rem] mt-[5rem] rounded-2xl">
       <div>
-        <div className="flex justify-between w-[322.333px] h-[27px] mb-[30px]">
+        <div className="flex bg-white justify-between w-[322.333px] h-[27px] mb-[30px]">
           <h5 className="w-[120px] h-[26px] text-[24px] text-slate-800">
             <strong>€ {filteredHome?.price} </strong>
 
@@ -75,15 +76,20 @@ const Form = ({ filteredHome }) => {
           </div>
         </div>
         {showGuest && !state?.formCalender && (
-          <div className="absolute top-[14.5rem] right-[-2rem]">
+          <div className="absolute top-[19.5rem] right-[-2rem]">
             {<WhoPopup />}
           </div>
         )}
       </div>
-      <Link to="/signup">
+      <Link to="/confirmation">
         <div
           onClick={() =>
-            dispatch({ type: "FILTERED-DATA", payload: filteredHome })
+            dispatch({
+              type: "FILTERED-DATA",
+              payload: filteredHome,
+              calcDays: state.calcDays,
+              totalGuests: totalGuests,
+            })
           }
           className="w-[322.333px] h-[48px] bg-pink-700 text-white font-[500] flex items-center justify-center rounded-xl mt-5"
         >

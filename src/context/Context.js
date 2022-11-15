@@ -18,6 +18,7 @@ const ContextProvider = ({ children }) => {
     calcDays: 0,
     filteredData: {},
     activeIconName: "",
+    totalGuests: 0,
   };
 
   const reducer = (state, action) => {
@@ -54,7 +55,12 @@ const ContextProvider = ({ children }) => {
         return { ...state, formCalender: !state.formCalender };
 
       case "FILTERED-DATA":
-        return { ...state, filteredData: action.payload };
+        return {
+          ...state,
+          filteredData: action.payload,
+          calcDays: action.calcDays,
+          totalGuests: action.totalGuests,
+        };
       case "active-icon-name":
         return { ...state, activeIconName: action.payload };
       case "change-active-icon":
