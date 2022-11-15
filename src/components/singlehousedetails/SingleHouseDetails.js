@@ -10,6 +10,9 @@ import SelfCheckAirCover from "./selfcheckinair/SelfCheckAirCover";
 import WhereSleep from "./selfcheckinair/WhereSleep";
 import LoginForm from "../login/LoginForm";
 import PlaceOffers from "./selfcheckinair/PlaceOffers";
+import SingleMap from "./singlemap/SingleMap";
+import Reviews from "./reviews/Reviews";
+import Footer from "./footer/Footer";
 const SingleHouseDetails = () => {
   const { state, login } = useContext(Context);
 
@@ -30,6 +33,9 @@ const SingleHouseDetails = () => {
           <SelfCheckAirCover filteredHome={filteredHome} />
           <WhereSleep />
           <PlaceOffers />
+          <Reviews filteredHome={filteredHome} />
+          <SingleMap filteredHome={filteredHome} />
+          <Footer filteredHome={filteredHome} />
         </div>
         <Form filteredHome={filteredHome} />
       </div>

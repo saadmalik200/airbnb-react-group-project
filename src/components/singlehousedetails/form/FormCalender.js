@@ -28,7 +28,7 @@ function FormCalender() {
       second: endDate,
       calcDays: calcDays,
     });
-  }, [startDate, endDate, calcDays, dispatch]);
+  }, [endDate, calcDays, dispatch]);
 
   // console.log(startDate, endDate);
 
