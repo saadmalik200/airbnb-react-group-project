@@ -98,18 +98,20 @@ const SignUpPage = () => {
                 <div>
                   {" "}
                   €{" "}
-                  {(+state?.filteredData?.price * state?.calcDays +
-                    +(
-                      state?.filteredData?.price *
-                      state?.calcDays *
-                      0.08
-                    ).toFixed(0) +
-                    +(
-                      state?.filteredData?.price *
-                      state?.calcDays *
-                      0.05
-                    ).toFixed(0)) *
-                    0.25}
+                  {(
+                    (+state?.filteredData?.price * state?.calcDays +
+                      +(
+                        state?.filteredData?.price *
+                        state?.calcDays *
+                        0.08
+                      ).toFixed(0) +
+                      +(
+                        state?.filteredData?.price *
+                        state?.calcDays *
+                        0.05
+                      ).toFixed(0)) *
+                    0.25
+                  ).toFixed(0)}
                 </div>
                 <Radio
                   checked={selectedValue === "a"}
@@ -122,23 +124,35 @@ const SignUpPage = () => {
             </div>
             <div className="w-[494px]">
               Pay €{" "}
-              {(+state?.filteredData?.price * state?.calcDays +
-                +(state?.filteredData?.price * state?.calcDays * 0.08).toFixed(
-                  0
-                ) +
-                +(state?.filteredData?.price * state?.calcDays * 0.05).toFixed(
-                  0
-                )) *
-                0.6}{" "}
+              {(
+                (+state?.filteredData?.price * state?.calcDays +
+                  +(
+                    state?.filteredData?.price *
+                    state?.calcDays *
+                    0.08
+                  ).toFixed(0) +
+                  +(
+                    state?.filteredData?.price *
+                    state?.calcDays *
+                    0.05
+                  ).toFixed(0)) *
+                0.6
+              ).toFixed(0)}{" "}
               now, and the rest (€{" "}
-              {(+state?.filteredData?.price * state?.calcDays +
-                +(state?.filteredData?.price * state?.calcDays * 0.08).toFixed(
-                  0
-                ) +
-                +(state?.filteredData?.price * state?.calcDays * 0.05).toFixed(
-                  0
-                )) *
-                0.4}
+              {(
+                (+state?.filteredData?.price * state?.calcDays +
+                  +(
+                    state?.filteredData?.price *
+                    state?.calcDays *
+                    0.08
+                  ).toFixed(0) +
+                  +(
+                    state?.filteredData?.price *
+                    state?.calcDays *
+                    0.05
+                  ).toFixed(0)) *
+                0.4
+              ).toFixed(0)}
               ) will be automatically charged to the same payment method on Dec
               15, 2022. No extra fees.
             </div>

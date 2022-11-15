@@ -21,7 +21,7 @@ function App() {
           <Route path="/map" element={<Map height={830} />} />
           <Route path="/home/:singlehome" element={<SingleHouseDetails />} />
           <Route path="/home/login" element={<LoginForm />} />
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/confirmation" element={<SignUpPage />} />
         </Routes>
       </BrowserRouter>
     </div>
