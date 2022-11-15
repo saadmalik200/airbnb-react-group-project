@@ -81,7 +81,7 @@ const Form = ({ filteredHome }) => {
           </div>
         )}
       </div>
-      <Link to="/signup">
+      <Link to="/confirmation">
         <div
           onClick={() =>
             dispatch({
