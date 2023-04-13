@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Airbnb Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Airbnb is a popular online platform that allows people to rent out their properties, such as apartments, houses, and rooms, to travelers for short-term stays. The company was founded in 2008 and has since grown into a global hospitality company, with over 4 million hosts in more than 220 countries and regions.
 
-## Available Scripts
+## Link
 
-In the project directory, you can run:
+- Live Site URL: [https://harshita1225.github.io/airbnb-react-group-project/](https://harshita1225.github.io/airbnb-react-group-project/)
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Overview](#overview)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Link](#link)
 
-### `npm test`
+- [The challenge](#the-challenge)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Screenshot](#screenshot)
 
-### `npm run build`
+- [My process](#my-process)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Built with](#built-with)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project Specifications
 
-### `npm run eject`
+- We have designed and developed a website that facilitates the booking of apartments and holiday homes, providing users with a range of features and functionality. The homepage of the website showcases all available apartments for rent, whether it be for a short-term stay or a longer holiday. Users can also access a map page that displays the location of each apartment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- For each apartment, there is a dedicated page that provides detailed information about the property, including images, amenities, and pricing. From this page, users have the option to reserve the apartment by filling out a form that includes the desired dates of stay and the number of people.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Once the user has completed the form, the website calculates the cost of the reservation, including any additional fees, and displays a booking confirmation page for the user to review before finalizing the payment. Overall, the website provides a seamless booking experience for users seeking temporary accommodation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Screenshot
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Desktop Version
 
-## Learn More
+- HomePage
+  ![Homepage](./src/images/homepage.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Map Page
+  ![map page](./src/images/mappage.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Single Apartment Page
+  ![singlepage](./src/images/singleproductpage.png)
 
-### Code Splitting
+## My process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Home Page
+- Login Page
+- Map Page
+- single apartment Page
+- Confirmation Page
 
-### Analyzing the Bundle Size
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Semantic HTML5 markup
+- Tailwind
+- React js
+- CSS
 
-### Making a Progressive Web App
+### contributers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Harshita Joshi
+- Hizkiel Mesfin
+- Saad Malik
